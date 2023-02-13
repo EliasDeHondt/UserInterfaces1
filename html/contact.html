@@ -6,6 +6,14 @@
         <meta charset="UTF-8">
         <title>Contact</title>
         <!--Meta + Title-->
+        <!--CSS-->
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="">
+        <!--CSS-->
+        <!--JS-->
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+        <script src="/script/map.js" defer></script>
+        <!--JS-->
     </head>
     <body id="contact">
         <h1>Contact</h1>
@@ -18,7 +26,9 @@
                     <li><a href="/index.html">Home</a></li>
                     <li><a href="/html/producten.html">Producten</a>
                         <ul>
-                            <li><a href="/html/productdetail/padelrackets1.html">Productdetail 1</a></li>
+                            <li><a href="/html/productdetail/padelrackets1.html">Padel Rackets 1</a></li>
+                            <li><a href="/html/productdetail/padelrackets2.html">Padel Rackets 2</a></li>
+                            <li><a href="/html/productdetail/padelrackets3.html">Padel Rackets 3</a></li>
                         </ul>
                     </li>
                     <li><a href="/html/personalisering.html">Personalisering</a></li>
@@ -28,8 +38,27 @@
             </nav>
             <!--Top Navbar-->
         </header>
+        <hr> <!--TEMP-->
         <main>
+            <section>
+                <!--Contactgegevens-->
+                <h2>Contactgegevens</h2>
+                <p>Onze naam EliasDH</p>
+                <p>Mail naar
+                    <a href="mailto:elias.dehondt@student.kdg.be">e-mailadres</a>
+                </p>
+                <p>Bel naar
+                    <a href="tel:+32495161542">+32 314 15 92 65</a>
+                </p>
+                <p>Kom naar ons
+                    <a href="https://www.google.com/maps/place/Karel+de+Grote+Hogeschool/@51.2181563,4.3987089,17z/data=!3m1!4b1!4m6!3m5!1s0x47c3f6f6d16cb7fb:0xfc5f09fa2a5e0ae9!8m2!3d51.218153!4d4.4009029!16s%2Fg%2F1tdypz43">Nationalestraat 5, 2000 Antwerpen</a>
+                </p>
+                <section id="map"><h3>Map</h3></section>
+                <!--Contactgegevens-->
+            </section>
         </main>
+
+        <hr> <!--TEMP-->
         <footer>
             <!--Bottom-->
             <p>Design by

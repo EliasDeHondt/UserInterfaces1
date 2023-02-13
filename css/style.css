@@ -1,0 +1,11 @@
+/*
+ * Van Elias De Hondt
+ * https://eliasdh.com
+*/
+/* Contact */
+#map {
+    filter: hue-rotate(45deg) !important;
+    height: 400px;
+    width: 800px;
+}
+/* Contact */
