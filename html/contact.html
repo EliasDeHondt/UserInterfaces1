@@ -6,23 +6,22 @@
         <meta charset="UTF-8">
         <title>Contact</title>
         <!--Meta + Title-->
+        <!--Favicon-->
+        <link href="/Examenproject/media/images/favicon.ico" rel="icon">
+        <!--Favicon-->
         <!--CSS-->
-        <link rel="stylesheet" href="/Examenproject/css/style.css">
-        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="">
+        <link rel="stylesheet" href="/Examenproject/css/site.css">
+        <link rel="stylesheet" href="/Examenproject/css/contact.css">
         <!--CSS-->
-        <!--JS-->
-        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
-        <script src="/Examenproject/script/map.js" defer></script>
-        <!--JS-->
     </head>
     <body id="contact">
         <h1>Contact</h1>
         <header>
-            <img alt="logo" src="/Examenproject/media/images/logo.png">
             <!--Top Navbar-->
             <nav>
                 <h2>menu</h2>
                 <ul>
+                    <li><img class="nav-logo" alt="logo" src="/Examenproject/media/images/logo.png"></li>
                     <li><a href="/Examenproject/index.html">Home</a></li>
                     <li class="dropdown">
                         <a class="drop" href="/Examenproject/html/producten.html">Producten</a>
@@ -51,7 +50,11 @@
                     <a href="tel:+32495161542">+32 314 15 92 65</a>
                 </p>
                 <address>Nationalestraat 5, 2000 Antwerpen</address>
-                <section id="map"><h3>Map</h3></section>
+                <div>
+                    <iframe width="325" height="280" src="https://www.bing.com/maps/embed?h=280&w=325&cp=51.21848963366219~4.401032484318421&lvl=16.833919478256817&typ=d&sty=r&src=SHELL&FORM=MBEDV8">
+                    </iframe>
+
+                </div>
                 <!--Contactgegevens-->
             </article>
         </main>

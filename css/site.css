@@ -1,0 +1,77 @@
+/*
+ * Van Elias De Hondt
+ * https://eliasdh.com
+*/
+/* Font */
+body {
+    font-family: sans-serif;
+    margin: 0;
+}
+/* Font */
+/* Nav */
+.nav-logo {
+    height: 18.2%;
+    width: 18.2%;
+}
+.dropdown-content {
+    display: none; /* Zodat de extra opties alleen maar getoond worden wanneer aangesproken. */
+    position: absolute; /* Zorgt voor een constante grooten in de navigatiebalk in onderdeel. (Producten) */
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: #FFFFFF;
+    padding: 12px 16px;
+    text-decoration: none;
+    text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block; /* Wanneer de gebruiker over producten staat met zijn of haar cursor worden de extra opties getoond */
+}
+
+.dropdown {
+    float: left;
+}
+
+.dropdown .drop {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: #FFFFFF;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Voor de navigatiebalk correct te laten vertonen (5)background-color). */
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block; /* Zodat de buttons van een navigatiebalk op de correcte (Centraal in het midden staan). */
+    color: #FFFFFF;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #4F94F0;
+}
+
+.active {
+    background-color: #4F94F0;
+}
+/* Nav */
