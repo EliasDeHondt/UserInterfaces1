@@ -2,6 +2,9 @@
  * Van Elias De Hondt
  * https://eliasdh.com
 */
+.hide {
+    display:none
+}
 /* Grid Body */
 body {
     background: #333333;
@@ -10,7 +13,7 @@ body {
                          'main'
                          'footer';
     grid-template-columns: 100%;
-    grid-template-rows: 53px auto auto;
+    grid-template-rows: auto auto auto;
     list-style: none;
     margin: 10px;
     padding: 10px;
