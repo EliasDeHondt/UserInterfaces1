@@ -3,4 +3,51 @@
  * https://eliasdh.com
  */
 /* Productdetail */
+/* Button */
+button {
+    background-color: #FF0000;
+    border: none;
+    font-size: 18px;
+    color: #FFFFFF;
+    padding: 10px;
+    width: 250px;
+}
+/* Button */
+/* Grid Main */
+main {
+    display: grid;
+    gap: 10px 10px;
+    grid-template-areas: 'afbeelding product-specificaties'
+                         'omschrijving product-details';
+    grid-template-columns: 60% 40%;
+    grid-template-rows: auto auto;
+    list-style: none;
+    margin: 10px;
+    padding: 10px;
+}
+
+.afbeelding:nth-child(1) { grid-area: afbeelding; }
+.product-specificaties:nth-child(2) { grid-area: product-specificaties; }
+.product-details:nth-child(2) { grid-area: product-details; }
+.omschrijving:nth-child(2) { grid-area: omschrijving; }
+
+.afbeelding {
+    padding: 10px;
+}
+
+.product-specificaties {
+    padding: 10px;
+}
+
+.product-details {
+    padding: 10px;
+}
+
+.omschrijving {
+    padding: 10px;
+}
+/* Grid Main */
+article, footer, header, section {
+    background: #FFFFFF;
+}
 /* Productdetail */
