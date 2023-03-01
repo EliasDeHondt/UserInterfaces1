@@ -2,6 +2,24 @@
  * Van Elias De Hondt
  * https://eliasdh.com
 */
+/* Grid Body */
+body {
+    background: #333333;
+    display: grid;
+    grid-template-areas: 'header'
+                         'main'
+                         'footer';
+    grid-template-columns: 100%;
+    grid-template-rows: 53px auto auto;
+    list-style: none;
+    margin: 10px;
+    padding: 10px;
+}
+
+header:nth-child(1) { grid-area: header; }
+main:nth-child(2) { grid-area: main; }
+footer:nth-child(3) { grid-area: footer; }
+/* Grid Body */
 /* Font */
 body {
     font-family: sans-serif;
