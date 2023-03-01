@@ -1,0 +1,23 @@
+/*
+ * Van Elias De Hondt
+ * https://eliasdh.com
+ */
+/* Home */
+.item1 { grid-area: menu; }
+.item2 { grid-area: omschrijving; }
+.item3 { grid-area: getuigenissen; }
+.item3 { grid-area: producten; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+    'menu menu menu menu menu menu'
+    'omschrijving omschrijving producten producten producten producten'
+    'getuigenissen getuigenissen producten producten producten producten'
+    'footer footer footer footer footer footer';
+    gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+}
+/* Home */
