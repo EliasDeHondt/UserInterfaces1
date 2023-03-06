@@ -44,22 +44,34 @@
                 <section>
                     <!--Filter-->
                     <h3>Filter</h3>
-                    <label>Kleur
-                        <input type="radio" name="filter" value="Kleur">
-                        <span></span>
-                    </label>
-                    <label>Grootte
-                        <input type="radio" name="filter" value="Grootte">
-                        <span></span>
-                    </label>
-                    <label>Geslacht
-                        <input type="radio" name="filter" value="Geslacht">
-                        <span></span>
-                    </label>
-                    <label>Merk
-                        <input type="radio" name="filter" value="Merk">
-                        <span></span>
-                    </label>
+                    <label for="color-filter"></label>
+                    <select id="color-filter">
+                        <option value="">Alle kleuren</option>
+                        <option value="rood">Rood</option>
+                        <option value="blauw">Blauw</option>
+                        <option value="groen">Groen</option>
+                    </select>
+                    <label for="size-filter"></label>
+                    <select id="size-filter">
+                        <option value="">Alle maten</option>
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+                    <label for="gender-filter"></label>
+                    <select id="gender-filter">
+                        <option value="">Alle geslachten</option>
+                        <option value="man">Man</option>
+                        <option value="vrouw">Vrouw</option>
+                        <option value="unisex">Unisex</option>
+                    </select>
+                    <label for="brand-filter"></label>
+                    <select id="brand-filter">
+                        <option value="">Alle merken</option>
+                        <option value="nike">Nike</option>
+                        <option value="adidas">Adidas</option>
+                        <option value="puma">Puma</option>
+                    </select>
                     <!--Filter-->
                 </section>
                 <section>

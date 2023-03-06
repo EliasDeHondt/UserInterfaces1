@@ -15,7 +15,7 @@ button {
 /* Button */
 /* Grid Main */
 main {
-    display: grid;
+    display: grid; /* Dit zorgt ervoor dat de grid duidelijk getoond wordt en de layout correct is. */
     gap: 10px 10px;
     grid-template-areas: 'afbeelding product-specificaties'
                          'omschrijving product-details';
@@ -47,7 +47,7 @@ main {
     padding: 10px;
 }
 /* Grid Main */
-article, footer, header, section {
+article, header, section {
     background: #FFFFFF;
 }
 /* Productdetail */

@@ -97,4 +97,13 @@ article, header, section {
 section {
     padding: 10px;
 }
+/* Filter */
+select {
+    padding: 8px;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    color: #333333;
+    box-shadow: 0 0 0.5em #333333;
+}
+/* Filter */
 /* Producten */

@@ -61,8 +61,6 @@ body {
     display: block; /* Wanneer de gebruiker over producten staat met zijn of haar cursor worden de extra opties getoond */
 }
 
-
-
 .dropdown .drop {
     font-size: 16px;
     border: none;
@@ -103,10 +101,11 @@ li a:hover:not(.active) {
 }
 /* Nav */
 /* Titel */
-h2 {
-    font-size: 36px;
-    font-weight: bold;
-    margin-bottom: 20px;
+h2,h3 {
+    margin-top: 0;
+    font-size: 1.5em;
+    color: #4F94F0;
+    padding: 10px;
 }
 /* Titel */
 /* Footer */
