@@ -5,8 +5,8 @@
 /* Producten */
 /* Filter Groepen */
 label {
-    display: block;
-    position: relative;
+    display: block; /* Dit is ervoor te zorgen dat elke radio button de nodige plek heeft. */
+    position: relative; /* Dit is voor de custom Radio Buttons te Laten zien. */
     padding-left: 35px;
     margin-bottom: 12px;
     cursor: pointer;
@@ -14,13 +14,13 @@ label {
 }
 
 input {
-    position: absolute;
+    position: absolute; /* Dit is ervoor te zorgen dat de Radio Buttons dichter bij elkaar staan. */
     opacity: 0;
     cursor: pointer;
 }
 
 span {
-    position: absolute;
+    position: absolute; /* Dit is voor de custom Radio Buttons te Laten zien. */
     top: 0;
     left: 0;
     height: 25px;
@@ -39,11 +39,10 @@ input:checked ~ span {
 /* Filter Groepen */
 /* Grid Main */
 main {
-    display: grid;
+    display: grid; /* Dit zorgt ervoor dat de grid duidelijk getoond wordt en de layout correct is. */
     gap: 10px 10px;
     grid-template-areas: 'filter-groepen producten';
-    grid-template-columns: 10% 90%;
-    grid-template-rows: auto;
+    grid-template-columns: 11% 89%;
     list-style: none;
     margin: 10px;
     padding: 10px;
@@ -51,22 +50,13 @@ main {
 
 .filter-groepen:nth-child(1) { grid-area: filter-groepen; }
 .producten:nth-child(2) { grid-area: producten; }
-
-.filter-groepen {
-    padding: 10px;
-}
-
-.producten {
-    padding: 10px;
-}
 /* Grid Main */
 /* Grid Producten */
 .producten {
-    display: grid;
+    display: grid; /* Dit zorgt ervoor dat de grid duidelijk getoond wordt en de layout correct is. */
     gap: 10px 10px;
     grid-template-areas: 'padel-rackets padel-schoenen padel-balls padel-tassen';
     grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: auto;
     list-style: none;
     margin: 10px;
     padding: 10px;
@@ -101,7 +91,10 @@ main {
     padding: 10px;
 }
 /* Grid Producten */
-article, footer, header, section {
+article, header, section {
     background: #FFFFFF;
+}
+section {
+    padding: 10px;
 }
 /* Producten */

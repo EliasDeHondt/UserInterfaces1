@@ -3,4 +3,32 @@
  * https://eliasdh.com
  */
 /* Contact */
+/* Body */
+body {
+    color: #FFFFFF;
+}
+/* Body */
+/* Article */
+article {
+    margin: 0 auto;
+    max-width: 800px;
+}
+/* Article */
+/* Contact data */
+.contactData {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+/* Contact data */
+/* Address */
+address {
+    font-style: normal;
+}
+/* Address */
+/* Map */
+iframe {
+    border: none;
+}
+/* Map */
 /* Contact */

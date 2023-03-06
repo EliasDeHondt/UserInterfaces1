@@ -3,12 +3,20 @@
  * https://eliasdh.com
 */
 .hide {
-    display:none
+    display:none /* Dit wordt gebruikt voor de titels te hiden. */
+}
+
+a {
+    color: #4F94F0;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 /* Grid Body */
 body {
     background: #333333;
-    display: grid;
     grid-template-areas: 'header'
                          'main'
                          'footer';
@@ -42,7 +50,7 @@ body {
 }
 
 .dropdown-content a {
-    float: none;
+
     color: #FFFFFF;
     padding: 12px 16px;
     text-decoration: none;
@@ -53,9 +61,7 @@ body {
     display: block; /* Wanneer de gebruiker over producten staat met zijn of haar cursor worden de extra opties getoond */
 }
 
-.dropdown {
-    float: left;
-}
+
 
 .dropdown .drop {
     font-size: 16px;
@@ -72,12 +78,12 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden; /* Voor de navigatiebalk correct te laten vertonen (5)background-color). */
+    overflow: hidden; /* Voor de navigatiebalk correct te laten vertonen (5)background-color). (Dit is nodig, ik vond geen alternatief) */
     background-color: #333;
 }
 
 li {
-    float: left;
+    float: left; /* Dit is voor de navigatiebalk links te zetten en in vorm te laten. (Dit is nodig, ik vond geen alternatief) */
 }
 
 li a {
@@ -96,3 +102,28 @@ li a:hover:not(.active) {
     background-color: #4F94F0;
 }
 /* Nav */
+/* Titel */
+h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+/* Titel */
+/* Footer */
+footer {
+    background-color: #4F94F0;
+    padding: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 14px;
+}
+
+footer a {
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: #333333;
+}
+/* Footer */

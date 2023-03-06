@@ -3,4 +3,25 @@
  * https://eliasdh.com
  */
 /* FAQ */
+body {
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+article {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px 20px;
+}
+
+dt {
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+dd {
+    margin-left: 0;
+    margin-bottom: 20px;
+}
 /* FAQ */

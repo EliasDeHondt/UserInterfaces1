@@ -5,7 +5,7 @@
 /* Home */
 /* Grid Main */
 main {
-    display: grid;
+    display: grid; /* Dit zorgt ervoor dat de grid duidelijk getoond wordt en de layout correct is. */
     gap: 10px 10px;
     grid-template-areas: 'info product'
                          'getuigenissen product';
@@ -34,7 +34,7 @@ main {
     padding: 10px;
 }
 /* Grid Main */
-article, footer, header {
+article, header {
     background: #FFFFFF;
 }
 /* Home */
