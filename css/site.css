@@ -2,54 +2,57 @@
  * Van Elias De Hondt
  * https://eliasdh.com
 */
+
+/* Verbergt elementen met de "hide" class */
 .hide {
     display:none /* Dit wordt gebruikt voor de titels te hiden. */
 }
 
+/* Stijl van links in de pagina */
 a {
-    color: #4F94F0;
-    text-decoration: none;
+    color: #4F94F0; /* Linkkleur */
+    text-decoration: none; /* Geen onderstreepte links */
 }
 
+/* Stijl van links bij hover */
 a:hover {
-    text-decoration: underline;
+    text-decoration: underline; /* Onderstreepte links bij hover */
 }
 /* Grid Body */
 body {
-    background: #333333;
-    grid-template-areas: 'header'
-                         'main'
-                         'footer';
-    grid-template-columns: 100%;
-    grid-template-rows: auto auto auto;
-    list-style: none;
+    background: #333333; /* Achtergrondkleur */
+    grid-template-areas: 'header' 'main' 'footer'; /* Definitie van grid areas */
+    grid-template-columns: 100%; /* Enkele kolom */
+    grid-template-rows: auto auto auto; /* Hoogte van grid rows is automatisch */
+    list-style: none; /* Geen bullets bij ongenummerde lijsten */
 }
 
+/* Positionering van grid areas */
 header:nth-child(1) { grid-area: header; }
 main:nth-child(2) { grid-area: main; }
 footer:nth-child(3) { grid-area: footer; }
 /* Grid Body */
 /* Font */
 body {
-    font-family: sans-serif;
-    margin: 0;
+    font-family: sans-serif; /* Lettertype voor de pagina */
+    margin: 0; /* Geen marges rond de pagina */
 }
 /* Font */
 /* Nav */
 .nav-logo {
-    height: 18.2%;
-    width: 18.2%;
+    height: 18.2%; /* Hoogte van de navigatielogo */
+    width: 18.2%; /* Breedte van de navigatielogo */
 }
+
 .dropdown-content {
-    display: none; /* Zodat de extra opties alleen maar getoond worden wanneer aangesproken. */
-    position: absolute; /* Zorgt voor een constante grooten in de navigatiebalk in onderdeel. (Producten) */
-    min-width: 160px;
-    z-index: 1;
+    display: none; /* Verbergt dropdown content */
+    position: absolute; /* Plaatsing van dropdown content */
+    min-width: 160px; /* Minimale breedte van dropdown content */
+    z-index: 1; /* Layering van dropdown content */
 }
 
 .dropdown-content a {
-
-    color: #FFFFFF;
+    color: #FFFFFF; /* Kleur van dropdown links */
     padding: 12px 16px;
     text-decoration: none;
     text-align: left;
@@ -74,12 +77,11 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden; /* Voor de navigatiebalk correct te laten vertonen (5)background-color). (Dit is nodig, ik vond geen alternatief) */
     background-color: #333;
 }
 
 li {
-    float: left; /* Dit is voor de navigatiebalk links te zetten en in vorm te laten. (Dit is nodig, ik vond geen alternatief) */
+    display: inline-block; /* Zodat de buttons van een navigatiebalk op de correcte (Centraal in het midden staan). */
 }
 
 li a {
