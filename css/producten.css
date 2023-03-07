@@ -45,7 +45,6 @@ main {
     grid-template-columns: 11% 89%;
     list-style: none;
     margin: 10px;
-    padding: 10px;
 }
 
 .filter-groepen:nth-child(1) { grid-area: filter-groepen; }
@@ -59,7 +58,6 @@ main {
     grid-template-columns: 25% 25% 25% 25%;
     list-style: none;
     margin: 10px;
-    padding: 10px;
 }
 
 .padel-rackets:nth-child(1) { grid-area: padel-rackets; }
@@ -67,35 +65,13 @@ main {
 .padel-balls:nth-child(3) { grid-area: padel-balls; }
 .padel-tassen:nth-child(4) { grid-area: padel-tassen; }
 
-.padel-rackets {
+.padel-rackets, .padel-schoenen, .padel-balls, .padel-tassen {
     grid-row-start: 1;
     grid-row-end: 3;
-    padding: 10px;
-}
-
-.padel-schoenen {
-    grid-row-start: 1;
-    grid-row-end: 3;
-    padding: 10px;
-}
-
-.padel-balls {
-    grid-row-start: 1;
-    grid-row-end: 3;
-    padding: 10px;
-}
-
-.padel-tassen {
-    grid-row-start: 1;
-    grid-row-end: 3;
-    padding: 10px;
 }
 /* Grid Producten */
 article, header, section {
     background: #FFFFFF;
-}
-section {
-    padding: 10px;
 }
 /* Filter */
 select {

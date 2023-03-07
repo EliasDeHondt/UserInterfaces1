@@ -23,29 +23,12 @@ main {
     grid-template-rows: auto auto;
     list-style: none;
     margin: 10px;
-    padding: 10px;
 }
 
 .afbeelding:nth-child(1) { grid-area: afbeelding; }
 .product-specificaties:nth-child(2) { grid-area: product-specificaties; }
 .product-details:nth-child(2) { grid-area: product-details; }
 .omschrijving:nth-child(2) { grid-area: omschrijving; }
-
-.afbeelding {
-    padding: 10px;
-}
-
-.product-specificaties {
-    padding: 10px;
-}
-
-.product-details {
-    padding: 10px;
-}
-
-.omschrijving {
-    padding: 10px;
-}
 /* Grid Main */
 article, header, section {
     background: #FFFFFF;
