@@ -4,82 +4,71 @@
  */
 /* Producten */
 /* Filter Groepen */
-label {
-    display: block; /* Dit is ervoor te zorgen dat elke radio button de nodige plek heeft. */
-    position: relative; /* Dit is voor de custom Radio Buttons te Laten zien. */
-    padding-left: 35px;
-    margin-bottom: 12px;
-    cursor: pointer;
-    font-size: 15px;
+[value="alle1"]:checked ~ .filter [for="alle1"],
+[value="alle2"]:checked ~ .filter [for="alle2"],
+[value="alle3"]:checked ~ .filter [for="alle3"],
+[value="alle4"]:checked ~ .filter [for="alle4"],
+[value="blauw"]:checked ~ .filter [for="blauw"],
+[value="zwart"]:checked ~ .filter [for="zwart"],
+[value="geel"]:checked ~ .filter [for="geel"],
+[value="small"]:checked ~ .filter [for="small"],
+[value="medium"]:checked ~ .filter [for="medium"],
+[value="large"]:checked ~ .filter [for="large"],
+[value="man"]:checked ~ .filter [for="man"],
+[value="unisex"]:checked ~ .filter [for="unisex"],
+[value="adidas"]:checked ~ .filter [for="adidas"],
+[value="asics"]:checked ~ .filter [for="asics"],
+[value="puma"]:checked ~ .filter [for="puma"] {
+    background: #4F94F0;
+    color: #FFFFFF;
 }
 
-input {
+
+[value="alle1"]:checked ~ .productF [data-category],
+[value="alle2"]:checked ~ .productF [data-category],
+[value="alle3"]:checked ~ .productF [data-category],
+[value="alle4"]:checked ~ .productF [data-category] { /* Laat alleen de geselecteerde items zien en verberg de rest */
+    display: block;
+}
+
+[value="blauw"]:checked ~ .productenF .productF:not([data-category~="blauw"]),
+[value="zwart"]:checked ~ .productenF .productF:not([data-category~="zwart"]),
+[value="geel"]:checked ~ .productenF .productF:not([data-category~="geel"]),
+[value="groen"]:checked ~ .productenF .productF:not([data-category~="groen"]),
+[value="small"]:checked ~ .productenF .productF:not([data-category~="small"]),
+[value="medium"]:checked ~ .productenF .productF:not([data-category~="medium"]),
+[value="large"]:checked ~ .productenF .productF:not([data-category~="large"]),
+[value="man"]:checked ~ .productenF .productF:not([data-category~="man"]),
+[value="vrouw"]:checked ~ .productenF .productF:not([data-category~="vrouw"]),
+[value="unisex"]:checked ~ .productenF .productF:not([data-category~="unisex"]),
+[value="adidas"]:checked ~ .productenF .productF:not([data-category~="adidas"]),
+[value="asics"]:checked ~ .productenF .productF:not([data-category~="asics"]),
+[value="puma"]:checked ~ .productenF .productF:not([data-category~="puma"]) { /* Verberg items die niet aan de geselecteerde filters voldoen */
+    display: none;
+}
+
+input { /* Zorgt ervoor dat de radio buttons dichter bij elkaar staan */
     position: absolute; /* Dit is ervoor te zorgen dat de Radio Buttons dichter bij elkaar staan. */
     opacity: 0;
     cursor: pointer;
 }
 
-span {
-    position: absolute; /* Dit is voor de custom Radio Buttons te Laten zien. */
-    top: 0;
-    left: 0;
-    height: 25px;
-    width: 25px;
-    background-color: #333;
-    border-radius: 50%;
+.filter { /* Definieert de stijl van de filtersectie */
+    text-align: left;
+    margin-bottom: 2px;
 }
 
-input:hover input ~ span {
-    background-color: #333;
+.filter label {
+    padding: 5px 10px;
+    line-height: normal;
+    cursor: pointer; /* :°) */
 }
 
-input:checked ~ span {
-    background-color: #2196F3;
+.filter label:hover {
+    background: #4F94F0;
 }
 /* Filter Groepen */
-/* Grid Main */
-main {
-    display: grid; /* Dit zorgt ervoor dat de grid duidelijk getoond wordt en de layout correct is. */
-    gap: 10px 10px;
-    grid-template-areas: 'filter-groepen producten';
-    grid-template-columns: 11% 89%;
-    list-style: none;
-    margin: 10px;
-}
-
-.filter-groepen:nth-child(1) { grid-area: filter-groepen; }
-.producten:nth-child(2) { grid-area: producten; }
-/* Grid Main */
-/* Grid Producten */
-.producten {
-    display: grid; /* Dit zorgt ervoor dat de grid duidelijk getoond wordt en de layout correct is. */
-    gap: 10px 10px;
-    grid-template-areas: 'padel-rackets padel-schoenen padel-balls padel-tassen';
-    grid-template-columns: 25% 25% 25% 25%;
-    list-style: none;
-    margin: 10px;
-}
-
-.padel-rackets:nth-child(1) { grid-area: padel-rackets; }
-.padel-schoenen:nth-child(2) { grid-area: padel-schoenen; }
-.padel-balls:nth-child(3) { grid-area: padel-balls; }
-.padel-tassen:nth-child(4) { grid-area: padel-tassen; }
-
-.padel-rackets, .padel-schoenen, .padel-balls, .padel-tassen {
-    grid-row-start: 1;
-    grid-row-end: 3;
-}
-/* Grid Producten */
-article, header, section {
+article, header, section, .filter label:hover { /* Definieert de stijl van de producten en andere secties */
     background: #FFFFFF;
 }
-/* Filter */
-select {
-    padding: 8px;
-    border-radius: 8px;
-    background-color: #FFFFFF;
-    color: #333333;
-    box-shadow: 0 0 0.5em #333333;
-}
-/* Filter */
 /* Producten */
