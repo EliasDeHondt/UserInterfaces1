@@ -13,6 +13,9 @@
         <link rel="stylesheet" href="/elias.dehondt/css/site.css">
         <link rel="stylesheet" href="/elias.dehondt/css/personalisering.css">
         <!--CSS-->
+        <!--JS-->
+        <script src="/script/form_validation.js"></script>
+        <!--JS-->
     </head>
     <body id="personalisering">
         <h1 class="hide">Personalisering</h1>
@@ -39,6 +42,87 @@
             <!--Top Navbar-->
         </header>
         <main>
+            <h1>Bestel een product</h1>
+            <form>
+                <ol>
+                    <!--Naam-->
+                    <li> <!--Input elementene (1) naam-->
+                        <!--Label-->
+                        <label for="naam">Naam:</label>
+                        <!--Label-->
+                        <!--Input-->
+                        <input type="text" id="naam" name="naam" size="10" required> <!--Validatie-attributen 1x size-->
+                        <!--Input-->
+                        <!--Span-->
+                        <span id="naam-fout"></span>
+                        <!--Span-->
+                    </li>
+                    <!--Naam-->
+                    <!--Email-->
+                    <li> <!--Input elementene (2) email-->
+                        <!--Label-->
+                        <label for="email">E-mailadres:</label>
+                        <!--Label-->
+                        <!--Input-->
+                        <input type="email" id="email" name="email" required>
+                        <!--Input-->
+                        <!--Span-->
+                        <span id="email-fout"></span>
+                        <!--Span-->
+                    </li>
+                    <!--Email-->
+                    <!--Producten-->
+                    <li>
+                        <label for="producten">Kies product:</label>
+                        <select id="producten" name="producten">
+                            <option value="padelrackets1">Padel Rackets 1</option>
+                            <option value="padelrackets2">Padel Rackets 2</option>
+                            <option value="padelrackets3">Padel Rackets 3</option>
+                        </select>
+                    </li>
+                    <!--Producten-->
+                    <!--Kleur-->
+                    <li> <!--Input elementene (3) color-->
+                        <!--Label-->
+                        <input type="color" id="kleur" name="kleur" value="#4F94F0">
+                        <!--Label-->
+                        <!--Input-->
+                        <label for="kleur">Kleur</label>
+                        <!--Input-->
+                        <!--Span-->
+                        <span id="kleur-fout"></span>
+                        <!--Span-->
+                    </li>
+                    <!--Kleur-->
+                    <!--Grootte-->
+                    <li> <!--Input elementene (4) number-->
+                        <!--Label-->
+                        <input type="number" id="grootte" name="grootte" min="10" max="20" step="1"> <!--Validatie-attributen 3x min, max, step-->
+                        <!--Label-->
+                        <!--Input-->
+                        <label for="grootte">Grootte</label>
+                        <!--Input-->
+                        <!--Span-->
+                        <span id="grootte-fout"></span>
+                        <!--Span-->
+                    </li>
+                    <!--Grootte-->
+                    <!--Materiaal-->
+                    <li>
+                        <label for="materiaal">Kies u materiaal:</label>
+                        <select id="materiaal" name="producten">
+                            <option value="plastic">Plastic</option>
+                            <option value="stainlesssteel">Stainless Steel</option>
+                        </select>
+                    </li>
+                    <!--Materiaal-->
+                    <!--Verzend-->
+                    <li> <!--Input elementene (5) submit-->
+                        <input type="submit" id="verzend" value="verzend">
+                    </li>
+                    <!--Verzend-->
+                </ol>
+            </form>
         </main>
         <footer>
             <!--Bottom-->
