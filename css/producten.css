@@ -23,12 +23,11 @@
     color: #FFFFFF;
 }
 
-
 [value="alle1"]:checked ~ .productF [data-category],
 [value="alle2"]:checked ~ .productF [data-category],
 [value="alle3"]:checked ~ .productF [data-category],
-[value="alle4"]:checked ~ .productF [data-category] { /* Laat alleen de geselecteerde items zien en verberg de rest */
-    display: block;
+[value="alle4"]:checked ~ .productF [data-category] {
+    display: block; /* Laat alleen de geselecteerde items zien en verberg de rest */
 }
 
 [value="blauw"]:checked ~ .productenF .productF:not([data-category~="blauw"]),
@@ -54,8 +53,11 @@ input { /* Zorgt ervoor dat de radio buttons dichter bij elkaar staan */
 }
 
 .filter { /* Definieert de stijl van de filtersectie */
-    text-align: left;
-    margin-bottom: 2px;
+    display: block;
+    position: relative;
+    padding: 2px;
+    cursor: pointer;
+    font-size: 22px;
 }
 
 .filter label {
@@ -64,10 +66,28 @@ input { /* Zorgt ervoor dat de radio buttons dichter bij elkaar staan */
     cursor: pointer; /* :°) */
 }
 
-.filter label:hover {
+.filterOL label:hover {
     background: #4F94F0;
 }
+
+ol {
+    padding: 10px 10px 10px 40px;
+}
 /* Filter Groepen */
+/* Grid article */
+article {
+    display: grid; /* Dit zorgt ervoor dat de grid duidelijk getoond wordt en de layout correct is. */
+    gap: 10px 10px;
+    grid-template-areas: 'filterG productenG';
+    grid-template-columns: 10% 90%;
+    grid-template-rows: auto;
+    list-style: none;
+    margin: 10px;
+}
+
+.filterG:nth-child(1) { grid-area: filterG; }
+.productenG:nth-child(2) { grid-area: productenG; }
+/* Grid article */
 article, header, section, .filter label:hover { /* Definieert de stijl van de producten en andere secties */
     background: #FFFFFF;
 }

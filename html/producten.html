@@ -41,7 +41,7 @@
         <main>
             <article>
                 <!--Filter-->
-                <h2>Producten</h2>
+                <h2 class="hide">Filter</h2>
                 <!--Alle-->
                 <input type="radio" id="alle1" name="kleur" value="alle1" checked>
                 <input type="radio" id="alle2" name="Maat" value="alle2" checked>
@@ -69,301 +69,321 @@
                 <input type="radio" id="asics" name="Merk" value="asics">
                 <input type="radio" id="puma" name="Merk" value="puma">
                 <!--Merk-->
-                <!--kleur-->
-                <ol class="filter">
-                    <li><label for="alle1">Alle</label></li>
-                    <li><label for="blauw">Blauw</label></li>
-                    <li><label for="zwart">Zwart</label></li>
-                    <li><label for="geel">Geel</label></li>
-                    <li><label for="groen">Groen</label></li>
+                <ol class="filterG filterOL">
+                    <li>
+                        <!--kleur-->
+                        <ol>
+                            <li><label class="filter" for="alle1">Alle</label></li>
+                            <li><label class="filter" for="blauw">Blauw</label></li>
+                            <li><label class="filter" for="zwart">Zwart</label></li>
+                            <li><label class="filter" for="geel">Geel</label></li>
+                            <li><label class="filter" for="groen">Groen</label></li>
+                        </ol>
+                        <!--kleur-->
+                    </li>
+                    <li>
+                        <!--Maat-->
+                        <ol>
+                            <li><label class="filter" for="alle2">Alle</label></li>
+                            <li><label class="filter" for="small">Small</label></li>
+                            <li><label class="filter" for="medium">Medium</label></li>
+                            <li><label class="filter" for="large">Large</label></li>
+                        </ol>
+                        <!--Maat-->
+                    </li>
+                    <li>
+                        <!--Geslacht-->
+                        <ol>
+                            <li><label class="filter" for="alle3">Alle</label></li>
+                            <li><label class="filter" for="man">Man</label></li>
+                            <li><label class="filter" for="vrouw">Vrouw</label></li>
+                            <li><label class="filter" for="unisex">Unisex</label></li>
+                        </ol>
+                        <!--Geslacht-->
+                    </li>
+                    <li>
+                        <!--Merk-->
+                        <ol>
+                            <li><label class="filter" for="alle4">Alle</label></li>
+                            <li><label class="filter" for="adidas">Adidas</label></li>
+                            <li><label class="filter" for="asics">Asics</label></li>
+                            <li><label class="filter" for="puma">Puma</label></li>
+                        </ol>
+                        <!--Merk-->
+                    </li>
                 </ol>
-                <!--kleur-->
-                <!--Maat-->
-                <ol class="filter">
-                    <li><label for="alle2">Alle</label></li>
-                    <li><label for="small">Small</label></li>
-                    <li><label for="medium">Medium</label></li>
-                    <li><label for="large">Large</label></li>
-                </ol>
-                <!--Maat-->
-                <!--Geslacht-->
-                <ol class="filter">
-                    <li><label for="alle3">Alle</label></li>
-                    <li><label for="man">Man</label></li>
-                    <li><label for="vrouw">Vrouw</label></li>
-                    <li><label for="unisex">Unisex</label></li>
-                </ol>
-                <!--Geslacht-->
-                <!--Merk-->
-                <ol class="filter">
-                    <li><label for="alle4">Alle</label></li>
-                    <li><label for="adidas">Adidas</label></li>
-                    <li><label for="asics">Asics</label></li>
-                    <li><label for="puma">Puma</label></li>
-                </ol>
-                <!--Merk-->
                 <!--Filter-->
-                <!--Groepen-->
-                <ol class="filter">
-                    <li>
-                        <label>Padel Rackets
-                            <input type="radio" name="groepen" value="Padel Rackets">
-                        </label>
-                    </li>
-                    <li>
-                        <label>Padel Schoenen
-                            <input type="radio" name="groepen" value="Padel Schoenen">
-                        </label>
-                    </li>
-                    <li>
-                        <label>Padel Balls
-                            <input type="radio" name="groepen" value="Padel Balls">
-                        </label>
-                    </li>
-                    <li>
-                        <label>Padel Tassen
-                            <input type="radio" name="groepen" value="Padel Tassen">
-                        </label>
-                    </li>
-                </ol>
-                <!--Groepen-->
+<!--                &lt;!&ndash;Groepen&ndash;&gt;-->
+<!--                <ol class="filter">-->
+<!--                    <li>-->
+<!--                        <label>Padel Rackets-->
+<!--                            <input type="radio" name="groepen" value="Padel Rackets">-->
+<!--                        </label>-->
+<!--                    </li>-->
+<!--                    <li>-->
+<!--                        <label>Padel Schoenen-->
+<!--                            <input type="radio" name="groepen" value="Padel Schoenen">-->
+<!--                        </label>-->
+<!--                    </li>-->
+<!--                    <li>-->
+<!--                        <label>Padel Balls-->
+<!--                            <input type="radio" name="groepen" value="Padel Balls">-->
+<!--                        </label>-->
+<!--                    </li>-->
+<!--                    <li>-->
+<!--                        <label>Padel Tassen-->
+<!--                            <input type="radio" name="groepen" value="Padel Tassen">-->
+<!--                        </label>-->
+<!--                    </li>-->
+<!--                </ol>-->
+<!--                &lt;!&ndash;Groepen&ndash;&gt;-->
                 <!--Producten-->
-                <!--Padel Rackets-->
-                <ol class="productenF">
-                    <li class="productF" data-category="blauw medium adidas unisex">
-                        <section>
-                            <h3>Padel Rackets 1</h3>
-                            <a href="/elias.dehondt/html/productdetail/padelrackets1.html">
-                                <img alt="Padel Rackets 1" src="/elias.dehondt/media/images/padelrackets1-thumbnailfoto.png">
-                            </a>
-                            <p>Naam: Padel Rackets 1</p>
-                            <p>Prijs: 1,69</p>
-                            <p>Groep: Padel Rackets</p>
-                        </section>
+                <ol class="productenF productenG">
+                    <li>
+                        <!--Padel Rackets-->
+                        <ol>
+                            <li class="productF" data-category="blauw medium adidas unisex">
+                                <section>
+                                    <h3>Padel Rackets 1</h3>
+                                    <a href="/elias.dehondt/html/productdetail/padelrackets1.html">
+                                        <img alt="Padel Rackets 1" src="/elias.dehondt/media/images/padelrackets1-thumbnailfoto.png">
+                                    </a>
+                                    <p>Naam: Padel Rackets 1</p>
+                                    <p>Prijs: 1,69</p>
+                                    <p>Groep: Padel Rackets</p>
+                                </section>
+                            </li>
+                            <li class="productF" data-category="geel medium adidas unisex">
+                                <section>
+                                    <h3>Padel Rackets 2</h3>
+                                    <a href="/elias.dehondt/html/productdetail/padelrackets2.html">
+                                        <img alt="Padel Rackets 2" src="/elias.dehondt/media/images/padelrackets2-thumbnailfoto.png">
+                                    </a>
+                                    <p>Naam: Padel Rackets 2</p>
+                                    <p>Prijs: 1,69</p>
+                                    <p>Groep: Padel Rackets</p>
+                                </section>
+                            </li>
+                            <li class="productF" data-category="groen medium adidas unisex">
+                                <section>
+                                    <h3>Padel Rackets 3</h3>
+                                    <a href="/elias.dehondt/html/productdetail/padelrackets3.html">
+                                        <img alt="Padel Rackets 3" src="/elias.dehondt/media/images/padelrackets3-thumbnailfoto.png">
+                                    </a>
+                                    <p>Naam: Padel Rackets 3</p>
+                                    <p>Prijs: 1,69</p>
+                                    <p>Groep: Padel Rackets</p>
+                                </section>
+                            </li>
+                            <li class="productF" data-category="zwart medium adidas unisex">
+                                <section>
+                                    <h3>Padel Rackets 1</h3>
+                                    <a href="/elias.dehondt/html/productdetail/padelrackets4.html">
+                                        <img alt="Padel Rackets 4" src="/elias.dehondt/media/images/padelrackets4-thumbnailfoto.png">
+                                    </a>
+                                    <p>Naam: Padel Rackets 4</p>
+                                    <p>Prijs: 1,69</p>
+                                    <p>Groep: Padel Rackets</p>
+                                </section>
+                            </li>
+                            <li class="productF" data-category="zwart medium adidas unisex">
+                                <section>
+                                    <h3>Padel Rackets 5</h3>
+                                    <a href="/elias.dehondt/html/productdetail/padelrackets5.html">
+                                        <img alt="Padel Rackets 5" src="/elias.dehondt/media/images/padelrackets5-thumbnailfoto.png">
+                                    </a>
+                                    <p>Naam: Padel Rackets 5</p>
+                                    <p>Prijs: 1,69</p>
+                                    <p>Groep: Padel Rackets</p>
+                                </section>
+                            </li>
+                            <li class="productF" data-category="geel medium adidas unisex">
+                                <section>
+                                    <h3>Padel Rackets 6</h3>
+                                    <a href="/elias.dehondt/html/productdetail/padelrackets6.html">
+                                        <img alt="Padel Rackets 6" src="/elias.dehondt/media/images/padelrackets6-thumbnailfoto.png">
+                                    </a>
+                                    <p>Naam: Padel Rackets 6</p>
+                                    <p>Prijs: 1,69</p>
+                                    <p>Groep: Padel Rackets</p>
+                                </section>
+                            </li>
+                            <li class="productF" data-category="zwart medium adidas unisex">
+                                <section>
+                                    <h3>Padel Rackets 7</h3>
+                                    <a href="/elias.dehondt/html/productdetail/padelrackets7.html">
+                                        <img alt="Padel Rackets 7" src="/elias.dehondt/media/images/padelrackets7-thumbnailfoto.png">
+                                    </a>
+                                    <p>Naam: Padel Rackets 7</p>
+                                    <p>Prijs: 1,69</p>
+                                    <p>Groep: Padel Rackets</p>
+                                </section>
+                            </li>
+                            <li class="productF" data-category="zwart medium adidas unisex">
+                                <section>
+                                    <h3>Padel Rackets 8</h3>
+                                    <a href="/elias.dehondt/html/productdetail/padelrackets8.html">
+                                        <img alt="Padel Rackets 8" src="/elias.dehondt/media/images/padelrackets8-thumbnailfoto.png">
+                                    </a>
+                                    <p>Naam: Padel Rackets 8</p>
+                                    <p>Prijs: 1,69</p>
+                                    <p>Groep: Padel Rackets</p>
+                                </section>
+                            </li>
+                            <li class="productF" data-category="zwart medium adidas unisex">
+                                <section>
+                                    <h3>Padel Rackets 9</h3>
+                                    <a href="/elias.dehondt/html/productdetail/padelrackets9.html">
+                                        <img alt="Padel Rackets 9" src="/elias.dehondt/media/images/padelrackets9-thumbnailfoto.png">
+                                    </a>
+                                    <p>Naam: Padel Rackets 9</p>
+                                    <p>Prijs: 1,69</p>
+                                    <p>Groep: Padel Rackets</p>
+                                </section>
+                            </li>
+                            <li class="productF" data-category="geel medium adidas unisex">
+                                <section>
+                                    <h3>Padel Rackets 10</h3>
+                                    <a href="/elias.dehondt/html/productdetail/padelrackets10.html">
+                                        <img alt="Padel Rackets 10" src="/elias.dehondt/media/images/padelrackets10-thumbnailfoto.png">
+                                    </a>
+                                    <p>Naam: Padel Rackets 10</p>
+                                    <p>Prijs: 1,69</p>
+                                    <p>Groep: Padel Rackets</p>
+                                </section>
+                            </li>
+                        </ol>
+                        <!--Padel Rackets-->
                     </li>
-                    <li class="productF" data-category="geel medium adidas unisex">
-                        <section>
-                            <h3>Padel Rackets 2</h3>
-                            <a href="/elias.dehondt/html/productdetail/padelrackets2.html">
-                                <img alt="Padel Rackets 2" src="/elias.dehondt/media/images/padelrackets2-thumbnailfoto.png">
-                            </a>
-                            <p>Naam: Padel Rackets 2</p>
-                            <p>Prijs: 1,69</p>
-                            <p>Groep: Padel Rackets</p>
-                        </section>
+                    <li>
+                        <!--Padel Schoenen-->
+                        <ol>
+                            <li class="productF" data-category="blauw large asics man">
+                                <section>
+                                    <h3>Padel Schoenen 1</h3>
+                                    <a href="/elias.dehondt/html/productdetail/padelschoenen1.html">
+                                        <img alt="Padel Schoenen 1" src="/elias.dehondt/media/images/padelschoenen1-thumbnailfoto.png">
+                                    </a>
+                                    <p>Naam: Padel Schoenen 1</p>
+                                    <p>Prijs: 1,69</p>
+                                    <p>Groep: Padel Schoenen</p>
+                                </section>
+                            </li>
+                            <li class="productF" data-category="zwart medium asics vrouw">
+                                <section>
+                                    <h3>Padel Schoenen 2</h3>
+                                    <a href="/elias.dehondt/html/productdetail/padelschoenen2.html">
+                                        <img alt="Padel Schoenen 2" src="/elias.dehondt/media/images/padelschoenen2-thumbnailfoto.png">
+                                    </a>
+                                    <p>Naam: Padel Schoenen 2</p>
+                                    <p>Prijs: 1,69</p>
+                                    <p>Groep: Padel Schoenen</p>
+                                </section>
+                            </li>
+                            <li class="productF" data-category="zwart medium asics vrouw">
+                                <section>
+                                    <h3>Padel Schoenen 3</h3>
+                                    <a href="/elias.dehondt/html/productdetail/padelschoenen3.html">
+                                        <img alt="Padel Schoenen 3" src="/elias.dehondt/media/images/padelschoenen3-thumbnailfoto.png">
+                                    </a>
+                                    <p>Naam: Padel Schoenen 3</p>
+                                    <p>Prijs: 1,69</p>
+                                    <p>Groep: Padel Schoenen</p>
+                                </section>
+                            </li>
+                            <li class="productF" data-category="zwart medium asics vrouw">
+                                <section>
+                                    <h3>Padel Schoenen 4</h3>
+                                    <a href="/elias.dehondt/html/productdetail/padelschoenen4.html">
+                                        <img alt="Padel Schoenen 4" src="/elias.dehondt/media/images/padelschoenen4-thumbnailfoto.png">
+                                    </a>
+                                    <p>Naam: Padel Schoenen 4</p>
+                                    <p>Prijs: 1,69</p>
+                                    <p>Groep: Padel Schoenen</p>
+                                </section>
+                            </li>
+                        </ol>
+                        <!--Padel Schoenen-->
                     </li>
-                    <li class="productF" data-category="groen medium adidas unisex">
-                        <section>
-                            <h3>Padel Rackets 3</h3>
-                            <a href="/elias.dehondt/html/productdetail/padelrackets3.html">
-                                <img alt="Padel Rackets 3" src="/elias.dehondt/media/images/padelrackets3-thumbnailfoto.png">
-                            </a>
-                            <p>Naam: Padel Rackets 3</p>
-                            <p>Prijs: 1,69</p>
-                            <p>Groep: Padel Rackets</p>
-                        </section>
+                    <li>
+                        <!--Padel Balls-->
+                        <ol>
+                            <li class="productF" data-category="zwart medium asics unisex">
+                                <section>
+                                    <h3>Padel Balls 1</h3>
+                                    <a href="/elias.dehondt/html/productdetail/padelballs1.html">
+                                        <img alt="Padel Balls 1" src="/elias.dehondt/media/images/padelballs1-thumbnailfoto.png">
+                                    </a>
+                                    <p>Naam: Padel Balls 1</p>
+                                    <p>Prijs: 1,69</p>
+                                    <p>Groep: Padel Balls</p>
+                                </section>
+                            </li>
+                            <li class="productF" data-category="zwart medium asics unisex">
+                                <section>
+                                    <h3>Padel Balls 2</h3>
+                                    <a href="/elias.dehondt/html/productdetail/padelballs2.html">
+                                        <img alt="Padel Balls 2" src="/elias.dehondt/media/images/padelballs2-thumbnailfoto.png">
+                                    </a>
+                                    <p>Naam: Padel Balls 2</p>
+                                    <p>Prijs: 1,69</p>
+                                    <p>Groep: Padel Balls</p>
+                                </section>
+                            </li>
+                        </ol>
+                        <!--Padel Balls-->
                     </li>
-                    <li class="productF" data-category="zwart medium adidas unisex">
-                        <section>
-                            <h3>Padel Rackets 1</h3>
-                            <a href="/elias.dehondt/html/productdetail/padelrackets4.html">
-                                <img alt="Padel Rackets 4" src="/elias.dehondt/media/images/padelrackets4-thumbnailfoto.png">
-                            </a>
-                            <p>Naam: Padel Rackets 4</p>
-                            <p>Prijs: 1,69</p>
-                            <p>Groep: Padel Rackets</p>
-                        </section>
-                    </li>
-                    <li class="productF" data-category="zwart medium adidas unisex">
-                        <section>
-                            <h3>Padel Rackets 5</h3>
-                            <a href="/elias.dehondt/html/productdetail/padelrackets5.html">
-                                <img alt="Padel Rackets 5" src="/elias.dehondt/media/images/padelrackets5-thumbnailfoto.png">
-                            </a>
-                            <p>Naam: Padel Rackets 5</p>
-                            <p>Prijs: 1,69</p>
-                            <p>Groep: Padel Rackets</p>
-                        </section>
-                    </li>
-                    <li class="productF" data-category="geel medium adidas unisex">
-                        <section>
-                            <h3>Padel Rackets 6</h3>
-                            <a href="/elias.dehondt/html/productdetail/padelrackets6.html">
-                                <img alt="Padel Rackets 6" src="/elias.dehondt/media/images/padelrackets6-thumbnailfoto.png">
-                            </a>
-                            <p>Naam: Padel Rackets 6</p>
-                            <p>Prijs: 1,69</p>
-                            <p>Groep: Padel Rackets</p>
-                        </section>
-                    </li>
-                    <li class="productF" data-category="zwart medium adidas unisex">
-                        <section>
-                            <h3>Padel Rackets 7</h3>
-                            <a href="/elias.dehondt/html/productdetail/padelrackets7.html">
-                                <img alt="Padel Rackets 7" src="/elias.dehondt/media/images/padelrackets7-thumbnailfoto.png">
-                            </a>
-                            <p>Naam: Padel Rackets 7</p>
-                            <p>Prijs: 1,69</p>
-                            <p>Groep: Padel Rackets</p>
-                        </section>
-                    </li>
-                    <li class="productF" data-category="zwart medium adidas unisex">
-                        <section>
-                            <h3>Padel Rackets 8</h3>
-                            <a href="/elias.dehondt/html/productdetail/padelrackets8.html">
-                                <img alt="Padel Rackets 8" src="/elias.dehondt/media/images/padelrackets8-thumbnailfoto.png">
-                            </a>
-                            <p>Naam: Padel Rackets 8</p>
-                            <p>Prijs: 1,69</p>
-                            <p>Groep: Padel Rackets</p>
-                        </section>
-                    </li>
-                    <li class="productF" data-category="zwart medium adidas unisex">
-                        <section>
-                            <h3>Padel Rackets 9</h3>
-                            <a href="/elias.dehondt/html/productdetail/padelrackets9.html">
-                                <img alt="Padel Rackets 9" src="/elias.dehondt/media/images/padelrackets9-thumbnailfoto.png">
-                            </a>
-                            <p>Naam: Padel Rackets 9</p>
-                            <p>Prijs: 1,69</p>
-                            <p>Groep: Padel Rackets</p>
-                        </section>
-                    </li>
-                    <li class="productF" data-category="geel medium adidas unisex">
-                        <section>
-                            <h3>Padel Rackets 10</h3>
-                            <a href="/elias.dehondt/html/productdetail/padelrackets10.html">
-                                <img alt="Padel Rackets 10" src="/elias.dehondt/media/images/padelrackets10-thumbnailfoto.png">
-                            </a>
-                            <p>Naam: Padel Rackets 10</p>
-                            <p>Prijs: 1,69</p>
-                            <p>Groep: Padel Rackets</p>
-                        </section>
+                    <li>
+                        <!--Padel Tassen-->
+                        <ol>
+                            <li class="productF" data-category="zwart medium adidas unisex">
+                                <section>
+                                    <h3>Padel Tassen 1</h3>
+                                    <a href="/elias.dehondt/html/productdetail/padeltassen1.html">
+                                        <img alt="Padel Tassen 1" src="/elias.dehondt/media/images/padeltassen1-thumbnailfoto.png">
+                                    </a>
+                                    <p>Naam: Padel Tassen 1</p>
+                                    <p>Prijs: 1,69</p>
+                                    <p>Groep: Padel Tassen</p>
+                                </section>
+                            </li>
+                            <li class="productF" data-category="zwart medium adidas unisex">
+                                <section>
+                                    <h3>Padel Tassen 2</h3>
+                                    <a href="/elias.dehondt/html/productdetail/padeltassen2">
+                                        <img alt="Padel Tassen 2" src="/elias.dehondt/media/images/padeltassen2-thumbnailfoto.png">
+                                    </a>
+                                    <p>Naam: Padel Tassen 2</p>
+                                    <p>Prijs: 1,69</p>
+                                    <p>Groep: Padel Tassen</p>
+                                </section>
+                            </li>
+                            <li class="productF" data-category="geel medium adidas unisex">
+                                <section>
+                                    <h3>Padel Tassen 3</h3>
+                                    <a href="/elias.dehondt/html/productdetail/padeltassen3">
+                                        <img alt="Padel Tassen 3" src="/elias.dehondt/media/images/padeltassen3-thumbnailfoto.png">
+                                    </a>
+                                    <p>Naam: Padel Tassen 3</p>
+                                    <p>Prijs: 1,69</p>
+                                    <p>Groep: Padel Tassen</p>
+                                </section>
+                            </li>
+                            <li class="productF" data-category="zwart medium adidas unisex">
+                                <section>
+                                    <h3>Padel Tassen 4</h3>
+                                    <a href="/elias.dehondt/html/productdetail/padeltassen4">
+                                        <img alt="Padel Tassen 4" src="/elias.dehondt/media/images/padeltassen4-thumbnailfoto.png">
+                                    </a>
+                                    <p>Naam: Padel Tassen 4</p>
+                                    <p>Prijs: 1,69</p>
+                                    <p>Groep: Padel Tassen</p>
+                                </section>
+                            </li>
+                        </ol>
+                        <!--Padel Tassen-->
                     </li>
                 </ol>
-                <!--Padel Rackets-->
-                <!--Padel Schoenen-->
-                <ol class="productenF">
-                    <li class="productF" data-category="blauw large asics man">
-                        <section>
-                            <h3>Padel Schoenen 1</h3>
-                            <a href="/elias.dehondt/html/productdetail/padelschoenen1.html">
-                                <img alt="Padel Schoenen 1" src="/elias.dehondt/media/images/padelschoenen1-thumbnailfoto.png">
-                            </a>
-                            <p>Naam: Padel Schoenen 1</p>
-                            <p>Prijs: 1,69</p>
-                            <p>Groep: Padel Schoenen</p>
-                        </section>
-                    </li>
-                    <li class="productF" data-category="zwart medium asics vrouw">
-                        <section>
-                            <h3>Padel Schoenen 2</h3>
-                            <a href="/elias.dehondt/html/productdetail/padelschoenen2.html">
-                                <img alt="Padel Schoenen 2" src="/elias.dehondt/media/images/padelschoenen2-thumbnailfoto.png">
-                            </a>
-                            <p>Naam: Padel Schoenen 2</p>
-                            <p>Prijs: 1,69</p>
-                            <p>Groep: Padel Schoenen</p>
-                        </section>
-                    </li>
-                    <li class="productF" data-category="zwart medium asics vrouw">
-                        <section>
-                            <h3>Padel Schoenen 3</h3>
-                            <a href="/elias.dehondt/html/productdetail/padelschoenen3.html">
-                                <img alt="Padel Schoenen 3" src="/elias.dehondt/media/images/padelschoenen3-thumbnailfoto.png">
-                            </a>
-                            <p>Naam: Padel Schoenen 3</p>
-                            <p>Prijs: 1,69</p>
-                            <p>Groep: Padel Schoenen</p>
-                        </section>
-                    </li>
-                    <li class="productF" data-category="zwart medium asics vrouw">
-                        <section>
-                            <h3>Padel Schoenen 4</h3>
-                            <a href="/elias.dehondt/html/productdetail/padelschoenen4.html">
-                                <img alt="Padel Schoenen 4" src="/elias.dehondt/media/images/padelschoenen4-thumbnailfoto.png">
-                            </a>
-                            <p>Naam: Padel Schoenen 4</p>
-                            <p>Prijs: 1,69</p>
-                            <p>Groep: Padel Schoenen</p>
-                        </section>
-                    </li>
-                </ol>
-                <!--Padel Schoenen-->
-                <!--Padel Balls-->
-                <ol class="productenF">
-                    <li class="productF" data-category="zwart medium asics unisex">
-                        <section>
-                            <h3>Padel Balls 1</h3>
-                            <a href="/elias.dehondt/html/productdetail/padelballs1.html">
-                                <img alt="Padel Balls 1" src="/elias.dehondt/media/images/padelballs1-thumbnailfoto.png">
-                            </a>
-                            <p>Naam: Padel Balls 1</p>
-                            <p>Prijs: 1,69</p>
-                            <p>Groep: Padel Balls</p>
-                        </section>
-                    </li>
-                    <li class="productF" data-category="zwart medium asics unisex">
-                        <section>
-                            <h3>Padel Balls 2</h3>
-                            <a href="/elias.dehondt/html/productdetail/padelballs2.html">
-                                <img alt="Padel Balls 2" src="/elias.dehondt/media/images/padelballs2-thumbnailfoto.png">
-                            </a>
-                            <p>Naam: Padel Balls 2</p>
-                            <p>Prijs: 1,69</p>
-                            <p>Groep: Padel Balls</p>
-                        </section>
-                    </li>
-                </ol>
-                <!--Padel Balls-->
-                <!--Padel Tassen-->
-                <ol class="productenF">
-                    <li class="productF" data-category="zwart medium adidas unisex">
-                        <section>
-                            <h3>Padel Tassen 1</h3>
-                            <a href="/elias.dehondt/html/productdetail/padeltassen1.html">
-                                <img alt="Padel Tassen 1" src="/elias.dehondt/media/images/padeltassen1-thumbnailfoto.png">
-                            </a>
-                            <p>Naam: Padel Tassen 1</p>
-                            <p>Prijs: 1,69</p>
-                            <p>Groep: Padel Tassen</p>
-                        </section>
-                    </li>
-                    <li class="productF" data-category="zwart medium adidas unisex">
-                        <section>
-                            <h3>Padel Tassen 2</h3>
-                            <a href="/elias.dehondt/html/productdetail/padeltassen2">
-                                <img alt="Padel Tassen 2" src="/elias.dehondt/media/images/padeltassen2-thumbnailfoto.png">
-                            </a>
-                            <p>Naam: Padel Tassen 2</p>
-                            <p>Prijs: 1,69</p>
-                            <p>Groep: Padel Tassen</p>
-                        </section>
-                    </li>
-                    <li class="productF" data-category="geel medium adidas unisex">
-                        <section>
-                            <h3>Padel Tassen 3</h3>
-                            <a href="/elias.dehondt/html/productdetail/padeltassen3">
-                                <img alt="Padel Tassen 3" src="/elias.dehondt/media/images/padeltassen3-thumbnailfoto.png">
-                            </a>
-                            <p>Naam: Padel Tassen 3</p>
-                            <p>Prijs: 1,69</p>
-                            <p>Groep: Padel Tassen</p>
-                        </section>
-                    </li>
-                    <li class="productF" data-category="zwart medium adidas unisex">
-                        <section>
-                            <h3>Padel Tassen 4</h3>
-                            <a href="/elias.dehondt/html/productdetail/padeltassen4">
-                                <img alt="Padel Tassen 4" src="/elias.dehondt/media/images/padeltassen4-thumbnailfoto.png">
-                            </a>
-                            <p>Naam: Padel Tassen 4</p>
-                            <p>Prijs: 1,69</p>
-                            <p>Groep: Padel Tassen</p>
-                        </section>
-                    </li>
-                </ol>
-                <!--Padel Tassen-->
                 <!--Producten-->
             </article>
         </main>
