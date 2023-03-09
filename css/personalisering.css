@@ -11,4 +11,8 @@ label {
 input, label {
     margin: 0.4rem 0;
 }
+
+.validinput {
+    background: #FF0000;
+}
 /* Personalisering */
