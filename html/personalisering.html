@@ -14,7 +14,7 @@
         <link rel="stylesheet" href="/elias.dehondt/css/personalisering.css">
         <!--CSS-->
         <!--JS-->
-        <script src="/script/form_validation.js"></script>
+        <script src="/elias.dehondt/script/form_validation.js"></script>
         <!--JS-->
     </head>
     <body id="personalisering">
@@ -42,45 +42,64 @@
             <!--Top Navbar-->
         </header>
         <main>
-            <h1>Bestel een product</h1>
-            <form>
+            <form id="personalization-form" action="/html/bevestigingspagina.html" method="post">
                 <ol>
                     <!--Naam-->
-                    <li> <!--Input elementene (1) naam-->
+                    <li> <!--Input elementene (1) text-->
                         <!--Label-->
-                        <label for="naam">Naam:</label>
+                        <label for="name-form">Name:</label>
                         <!--Label-->
                         <!--Input-->
-                        <input type="text" id="naam" name="naam" size="10" required> <!--Validatie-attributen 1x size-->
+                        <input type="text" id="name-form" name="name-form" size="20" required> <!--Validatie-attributen 1x size-->
                         <!--Input-->
                         <!--Span-->
-                        <span id="naam-fout"></span>
+                        <span class="error" id="name-form-error"></span>
                         <!--Span-->
                     </li>
                     <!--Naam-->
+
                     <!--Email-->
                     <li> <!--Input elementene (2) email-->
                         <!--Label-->
-                        <label for="email">E-mailadres:</label>
+                        <label for="email-form">Email:</label>
                         <!--Label-->
                         <!--Input-->
-                        <input type="email" id="email" name="email" required>
+                        <input type="email" id="email-form" name="email-form" required> <!--Input elementene (2) email-->
                         <!--Input-->
                         <!--Span-->
-                        <span id="email-fout"></span>
+                        <span class="error" id="email-form-error"></span>
                         <!--Span-->
                     </li>
                     <!--Email-->
+
+                    <!--Leveringsadres-->
+                    <li>
+                        <!--Label-->
+                        <label for="leveringsadres">Leveringsadres:</label>
+                        <!--Label-->
+                        <!--Input-->
+                        <input type="text" id="leveringsadres" name="leveringsadres" required>
+                        <!--Input-->
+                        <!--Span-->
+                        <span class="error" id="leveringsadres-error"></span>
+                        <!--Span-->
+                    </li>
+                    <!--Leveringsadres-->
+
                     <!--Producten-->
                     <li>
-                        <label for="producten">Kies product:</label>
-                        <select id="producten" name="producten">
-                            <option value="padelrackets1">Padel Rackets 1</option>
-                            <option value="padelrackets2">Padel Rackets 2</option>
-                            <option value="padelrackets3">Padel Rackets 3</option>
+                        <!--Label-->
+                        <label for="product">Product:</label>
+                        <!--Label-->
+                        <select id="product" name="product" required>
+                            <option value="">Select a product</option>
+                            <option value="product1">Padel Rackets 1</option>
+                            <option value="product2">Padel Rackets 2</option>
+                            <option value="product3">Padel Rackets 3</option>
                         </select>
                     </li>
                     <!--Producten-->
+
                     <!--Kleur-->
                     <li> <!--Input elementene (3) color-->
                         <!--Label-->
@@ -94,6 +113,7 @@
                         <!--Span-->
                     </li>
                     <!--Kleur-->
+
                     <!--Grootte-->
                     <li> <!--Input elementene (4) number-->
                         <!--Label-->
@@ -107,18 +127,36 @@
                         <!--Span-->
                     </li>
                     <!--Grootte-->
+
                     <!--Materiaal-->
-                    <li>
-                        <label for="materiaal">Kies u materiaal:</label>
-                        <select id="materiaal" name="producten">
-                            <option value="plastic">Plastic</option>
-                            <option value="stainlesssteel">Stainless Steel</option>
-                        </select>
+                    <li> <!--Input elementene (5) checkbox-->
+                        <!--Label-->
+                        <label>Personalization Options:</label>
+                        <!--Label-->
+                        <section>
+                            <h2 class="hide">Plastic</h2>
+                            <!--Input-->
+                            <input type="checkbox" id="option1" name="options[]" value="option1">
+                            <!--Input-->
+                            <!--Label-->
+                            <label for="option1">Plastic</label>
+                            <!--Label-->
+                        </section>
+                        <section>
+                            <h2 class="hide">Stainless Steel</h2>
+                            <!--Input-->
+                            <input type="checkbox" id="option2" name="options[]" value="option2">
+                            <!--Input-->
+                            <!--Label-->
+                            <label for="option2">Stainless Steel</label>
+                            <!--Label-->
+                        </section>
                     </li>
                     <!--Materiaal-->
+
                     <!--Verzend-->
-                    <li> <!--Input elementene (5) submit-->
-                        <input type="submit" id="verzend" value="verzend">
+                    <li> <!--Input elementene (6) submit-->
+                        <button type="submit" id="verzendknop">Verzend</button>
                     </li>
                     <!--Verzend-->
                 </ol>

@@ -3,16 +3,80 @@
  * https://eliasdh.com
  */
 /* Personalisering */
-label {
-    display: block;
-    font: 1rem 'Fira Sans', sans-serif;
+ol {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-input, label {
-    margin: 0.4rem 0;
-}
-
+/* JS Class */
 .validinput {
-    background: #FF0000;
+    background-color: #d4edda;
+    border-color: #3ac03a;
 }
+
+.invalidinput {
+    background-color: #f8d7da;
+    border-color: #dc3545;
+}
+/* JS Class */
 /* Personalisering */
+
+
+
+/* Standaard stijlen voor formulierelementen */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
+}
+
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+}
+
+/* Stijlen voor geldige en ongeldige inputvelden */
+
+
+/* Stijlen voor de verzendknop */
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Stijlen voor foutmeldingen */
+.error {
+    color: red;
+    font-size: 14px;
+}
+
+
+
+label {
+    font-weight: bold;
+}
