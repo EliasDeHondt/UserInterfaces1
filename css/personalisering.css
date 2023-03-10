@@ -2,28 +2,6 @@
  * Van Elias De Hondt
  * https://eliasdh.com
  */
-/* Personalisering */
-ol {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-/* JS Class */
-.validinput {
-    background-color: #d4edda;
-    border-color: #3ac03a;
-}
-
-.invalidinput {
-    background-color: #f8d7da;
-    border-color: #dc3545;
-}
-/* JS Class */
-/* Personalisering */
-
-
 
 /* Standaard stijlen voor formulierelementen */
 input[type="text"],
@@ -71,7 +49,7 @@ input[type="submit"]:hover {
 
 /* Stijlen voor foutmeldingen */
 .error {
-    color: red;
+    /* color: red; */
     font-size: 14px;
 }
 
@@ -80,3 +58,27 @@ input[type="submit"]:hover {
 label {
     font-weight: bold;
 }
+
+/* Personalisering */
+ol {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* JS Class */
+.validinput {
+    /*  background-color: #d4edda;
+    border-color: #3ac03a; */
+    border: 10px solid #3ac03a !important;
+}
+
+.invalidinput {
+    /* background-color: #f8d7da;
+    border-color: #dc3545; */
+    border: 10px solid #dc3545 !important;
+}
+
+/* JS Class */
+/* Personalisering */

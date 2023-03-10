@@ -13,161 +13,161 @@
         <link rel="stylesheet" href="/elias.dehondt/css/site.css">
         <link rel="stylesheet" href="/elias.dehondt/css/personalisering.css">
         <!--CSS-->
-        <!--JS-->
-        <script src="/elias.dehondt/script/form_validation.js"></script>
-        <!--JS-->
     </head>
     <body id="personalisering">
-        <h1 class="hide">Personalisering</h1>
-        <header>
-            <!--Top Navbar-->
-            <nav>
-                <h2 class="hide">menu</h2>
-                <ul>
-                    <li><img class="nav-logo" alt="logo" src="/elias.dehondt/media/images/logo.png"></li>
-                    <li><a href="/elias.dehondt/index.html">Home</a></li>
-                    <li class="dropdown">
-                        <a class="drop" href="/elias.dehondt/html/producten.html">Producten</a>
-                        <ul class="dropdown-content">
-                            <li><a href="/elias.dehondt/html/productdetail/padelrackets1.html">Padel Rackets 1</a></li>
-                            <li><a href="/elias.dehondt/html/productdetail/padelrackets2.html">Padel Rackets 2</a></li>
-                            <li><a href="/elias.dehondt/html/productdetail/padelrackets3.html">Padel Rackets 3</a></li>
-                        </ul>
-                    </li>
-                    <li><a class="active" href="#personalisering">Personalisering</a></li>
-                    <li><a href="/elias.dehondt/html/faq.html">FAQ</a></li>
-                    <li><a href="/elias.dehondt/html/contact.html">Contact</a></li>
-                </ul>
-            </nav>
-            <!--Top Navbar-->
-        </header>
-        <main>
-            <form id="personalization-form" action="/html/bevestigingspagina.html" method="post">
-                <ol>
-                    <!--Naam-->
-                    <li> <!--Input elementene (1) text-->
-                        <!--Label-->
-                        <label for="name-form">Name:</label>
-                        <!--Label-->
-                        <!--Input-->
-                        <input type="text" id="name-form" name="name-form" size="20" required> <!--Validatie-attributen 1x size-->
-                        <!--Input-->
-                        <!--Span-->
-                        <span class="error" id="name-form-error"></span>
-                        <!--Span-->
-                    </li>
-                    <!--Naam-->
+    <h1 class="hide">Personalisering</h1>
+    <header>
+        <!--Top Navbar-->
+        <nav>
+            <h2 class="hide">menu</h2>
+            <ul>
+                <li><img class="nav-logo" alt="logo" src="/elias.dehondt/media/images/logo.png"></li>
+                <li><a href="/elias.dehondt/index.html">Home</a></li>
+                <li class="dropdown">
+                    <a class="drop" href="/elias.dehondt/html/producten.html">Producten</a>
+                    <ul class="dropdown-content">
+                        <li><a href="/elias.dehondt/html/productdetail/padelrackets1.html">Padel Rackets 1</a></li>
+                        <li><a href="/elias.dehondt/html/productdetail/padelrackets2.html">Padel Rackets 2</a></li>
+                        <li><a href="/elias.dehondt/html/productdetail/padelrackets3.html">Padel Rackets 3</a></li>
+                    </ul>
+                </li>
+                <li><a class="active" href="#personalisering">Personalisering</a></li>
+                <li><a href="/elias.dehondt/html/faq.html">FAQ</a></li>
+                <li><a href="/elias.dehondt/html/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <!--Top Navbar-->
+    </header>
+    <main>
+        <form id="personalization-form" action="/elias.dehondt/html/bevestigingspagina.html" method="get">
+            <ol>
+                <!--Naam-->
+                <li> <!--Input elementene (1) text-->
+                    <!--Label-->
+                    <label for="name-form">Name:</label>
+                    <!--Label-->
+                    <!--Input-->
+                    <input type="text" id="name-form" name="name-form" size="20" required> <!--Validatie-attributen 1x size-->
+                    <!--Input-->
+                    <!--Span-->
+                    <span class="error" id="name-form-error"></span>
+                    <!--Span-->
+                </li>
+                <!--Naam-->
 
-                    <!--Email-->
-                    <li> <!--Input elementene (2) email-->
-                        <!--Label-->
-                        <label for="email-form">Email:</label>
-                        <!--Label-->
-                        <!--Input-->
-                        <input type="email" id="email-form" name="email-form" required> <!--Input elementene (2) email-->
-                        <!--Input-->
-                        <!--Span-->
-                        <span class="error" id="email-form-error"></span>
-                        <!--Span-->
-                    </li>
-                    <!--Email-->
+                <!--Email-->
+                <li> <!--Input elementene (2) email-->
+                    <!--Label-->
+                    <label for="email-form">Email:</label>
+                    <!--Label-->
+                    <!--Input-->
+                    <input type="email" id="email-form" name="email-form" required> <!--Input elementene (2) email-->
+                    <!--Input-->
+                    <!--Span-->
+                    <span class="error" id="email-form-error"></span>
+                    <!--Span-->
+                </li>
+                <!--Email-->
 
-                    <!--Leveringsadres-->
-                    <li>
-                        <!--Label-->
-                        <label for="leveringsadres">Leveringsadres:</label>
-                        <!--Label-->
-                        <!--Input-->
-                        <input type="text" id="leveringsadres" name="leveringsadres" required>
-                        <!--Input-->
-                        <!--Span-->
-                        <span class="error" id="leveringsadres-error"></span>
-                        <!--Span-->
-                    </li>
-                    <!--Leveringsadres-->
+                <!--Leveringsadres-->
+                <li>
+                    <!--Label-->
+                    <label for="leveringsadres">Leveringsadres:</label>
+                    <!--Label-->
+                    <!--Input-->
+                    <input type="text" id="leveringsadres" name="leveringsadres" required>
+                    <!--Input-->
+                    <!--Span-->
+                    <span class="error" id="leveringsadres-error"></span>
+                    <!--Span-->
+                </li>
+                <!--Leveringsadres-->
 
-                    <!--Producten-->
-                    <li>
-                        <!--Label-->
-                        <label for="product">Product:</label>
-                        <!--Label-->
-                        <select id="product" name="product" required>
-                            <option value="">Select a product</option>
-                            <option value="product1">Padel Rackets 1</option>
-                            <option value="product2">Padel Rackets 2</option>
-                            <option value="product3">Padel Rackets 3</option>
-                        </select>
-                    </li>
-                    <!--Producten-->
+                <!--Producten-->
+                <li>
+                    <!--Label-->
+                    <label for="product">Product:</label>
+                    <!--Label-->
+                    <select id="product" name="product" required>
+                        <option value="">Select a product</option>
+                        <option value="product1">Padel Rackets 1</option>
+                        <option value="product2">Padel Rackets 2</option>
+                        <option value="product3">Padel Rackets 3</option>
+                    </select>
+                </li>
+                <!--Producten-->
 
-                    <!--Kleur-->
-                    <li> <!--Input elementene (3) color-->
-                        <!--Label-->
-                        <input type="color" id="kleur" name="kleur" value="#4F94F0">
-                        <!--Label-->
-                        <!--Input-->
-                        <label for="kleur">Kleur</label>
-                        <!--Input-->
-                        <!--Span-->
-                        <span id="kleur-fout"></span>
-                        <!--Span-->
-                    </li>
-                    <!--Kleur-->
+                <!--Kleur-->
+                <li> <!--Input elementene (3) color-->
+                    <!--Label-->
+                    <input type="color" id="kleur" name="kleur" value="#4F94F0">
+                    <!--Label-->
+                    <!--Input-->
+                    <label for="kleur">Kleur</label>
+                    <!--Input-->
+                    <!--Span-->
+                    <span id="kleur-fout"></span>
+                    <!--Span-->
+                </li>
+                <!--Kleur-->
 
-                    <!--Grootte-->
-                    <li> <!--Input elementene (4) number-->
-                        <!--Label-->
-                        <input type="number" id="grootte" name="grootte" min="10" max="20" step="1"> <!--Validatie-attributen 3x min, max, step-->
-                        <!--Label-->
-                        <!--Input-->
-                        <label for="grootte">Grootte</label>
-                        <!--Input-->
-                        <!--Span-->
-                        <span id="grootte-fout"></span>
-                        <!--Span-->
-                    </li>
-                    <!--Grootte-->
+                <!--Grootte-->
+                <li> <!--Input elementene (4) number-->
+                    <!--Label-->
+                    <input type="number" id="grootte" name="grootte" min="10" max="20" step="1" required> <!--Validatie-attributen 3x min, max, step-->
+                    <!--Label-->
+                    <!--Input-->
+                    <label for="grootte">Grootte</label>
+                    <!--Input-->
+                    <!--Span-->
+                    <span id="grootte-fout"></span>
+                    <!--Span-->
+                </li>
+                <!--Grootte-->
 
-                    <!--Materiaal-->
-                    <li> <!--Input elementene (5) checkbox-->
+                <!--Materiaal-->
+                <li> <!--Input elementene (5) checkbox-->
+                    <!--Label-->
+                    <label>Personalization Options:</label>
+                    <!--Label-->
+                    <section>
+                        <h2 class="hide">Plastic</h2>
+                        <!--Input-->
+                        <input type="radio" id="option1" name="option" value="plastic" required>
+                        <!--Input-->
                         <!--Label-->
-                        <label>Personalization Options:</label>
+                        <label for="option1">Plastic</label>
                         <!--Label-->
-                        <section>
-                            <h2 class="hide">Plastic</h2>
-                            <!--Input-->
-                            <input type="checkbox" id="option1" name="options[]" value="option1">
-                            <!--Input-->
-                            <!--Label-->
-                            <label for="option1">Plastic</label>
-                            <!--Label-->
-                        </section>
-                        <section>
-                            <h2 class="hide">Stainless Steel</h2>
-                            <!--Input-->
-                            <input type="checkbox" id="option2" name="options[]" value="option2">
-                            <!--Input-->
-                            <!--Label-->
-                            <label for="option2">Stainless Steel</label>
-                            <!--Label-->
-                        </section>
-                    </li>
-                    <!--Materiaal-->
+                    </section>
+                    <section>
+                        <h2 class="hide">Stainless Steel</h2>
+                        <!--Input-->
+                        <input type="radio" id="option2" name="option" value="steel" required>
+                        <!--Input-->
+                        <!--Label-->
+                        <label for="option2">Stainless Steel</label>
+                        <!--Label-->
+                    </section>
+                </li>
+                <!--Materiaal-->
 
-                    <!--Verzend-->
-                    <li> <!--Input elementene (6) submit-->
-                        <button type="submit" id="verzendknop">Verzend</button>
-                    </li>
-                    <!--Verzend-->
-                </ol>
-            </form>
-        </main>
-        <footer>
-            <!--Bottom-->
-            <p>Design by <a href="https://www.eliasdh.com">Elias De Hondt.</a></p>
-            <p>Copyright 2018 - 2045 &copy; EliasDH.</p>
-            <p>All rights Reserved.</p>
-            <!--Bottom-->
-        </footer>
+                <!--Verzend-->
+                <li> <!--Input elementene (6) submit-->
+                    <button type="submit" id="verzendknop"></button>
+                </li>
+                <!--Verzend-->
+            </ol>
+        </form>
+    </main>
+    <footer>
+        <!--Bottom-->
+        <p>Design by <a href="https://www.eliasdh.com">Elias De Hondt.</a></p>
+        <p>Copyright 2018 - 2045 &copy; EliasDH.</p>
+        <p>All rights Reserved.</p>
+        <!--Bottom-->
+    </footer>
     </body>
+    <!--JS-->
+    <script src="/elias.dehondt/script/form_validation.js"></script>
+    <!--JS-->
 </html>
