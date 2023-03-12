@@ -41,7 +41,7 @@ naamInput.addEventListener("focusout", () => {
     }
 });
 /* Naam */
-
+/* Email */
 emailInput.addEventListener("focusout", function () {
     // Haal de waarde van het invoerveld op
     const email = emailInput.value;
@@ -62,14 +62,12 @@ emailInput.addEventListener("focusout", function () {
         setValid(emailInput, 'emailInput');
     }
 });
-
+/* Email */
 leveringsadres.addEventListener("focusout", function () {
     // Haal de waarde van het invoerveld op
     const val = leveringsadres.value.trim();
     (val.length === 0) ? setInvalid(leveringsadres, 'emailInput') : setValid(leveringsadres, 'emailInput');
 });
-
-/* Form Validation */
 
 function setValid(el, name) {
     el.className = "";
@@ -90,11 +88,12 @@ function setInvalid(el, name) {
 function toggleSubmitBtn() {
     if (invalid_elements.length > 0) {
         verzendKnop.setAttribute('disabled', true);
-        verzendKnop.innerHTML = "kink boy";
+        verzendKnop.innerHTML = "Ongeldige of onvoldoende informatie";
     } else {
         verzendKnop.removeAttribute('disabled');
-        verzendKnop.innerHTML = "LETSS GOOOOO";
+        verzendKnop.innerHTML = "Verzenden";
     }
 }
 
 toggleSubmitBtn();
+/* Form Validation */

@@ -30,4 +30,4 @@ for (const [key, value] of params.entries()) {
 
 html += '</table>';
 
-document.getElementById('best_gegev').innerHTML = html;
+document.getElementById('bestelling_data').innerHTML = html;
