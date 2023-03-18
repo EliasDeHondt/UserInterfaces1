@@ -1,8 +1,7 @@
-/*
- * Van Elias De Hondt
- * https://eliasdh.com
+/**
+ * @author Elias De Hondt
+ * @see https://eliasdh.com
  */
-/* Form Validation */
 
 // Collecteert de informatie en steekt het in variabelen (van personalisering.html)
 const naamInput = document.getElementById("name-form");
@@ -10,7 +9,7 @@ const emailInput = document.getElementById("email-form");
 const verzendKnop = document.getElementById("verzendknop");
 const leveringsadres = document.getElementById("leveringsadres");
 
-var invalid_elements = [];
+const invalid_elements = [];
 
 /* Naam */
 // Voeg eventlistener toe aan invoerveld "Naam"
