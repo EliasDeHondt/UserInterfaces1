@@ -5,12 +5,12 @@
 
 /* Personalisering */
 /* JS Class */
-.validinput {
+.valid-input {
     background-color: #d4edda !important;
     border-color: #3ac03a !important;
 }
 
-.invalidinput {
+.invalidity {
     background-color: #f8d7da !important;
     border-color: #dc3545 !important;
 }

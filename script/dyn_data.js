@@ -1,14 +1,48 @@
 /**
  * @author Elias De Hondt
  * @see https://eliasdh.com
+ * @version M3.2_v1
  */
 
 /* Dyn Data */
+/**
+ * @constant {tekenreeks}
+ * @description De categorie "Padel Rackets".
+ */
 const Padel_Rackets = "Padel Rackets"
+
+/**
+ * @constant {tekenreeks}
+ * @description De categorie "Padel Schoenen".
+ */
 const Padel_Schoenen = "Padel Schoenen"
+
+/**
+ * @constant {tekenreeks
+ * @description De categorie "Padel Balls".
+ */
 const Padel_Balls = "Padel Balls"
+
+/**
+ * @constant {tekenreeks}
+ * @description De categorie "Padel Tassen".
+ */
 const Padel_Tassen = "Padel Tassen"
 
+/**
+ * Vertegenwoordigt een product in de categorie Padel.
+ *
+ * @typedef {Object} Product
+ * @property {nummer} prod_id - De ID van het product.
+ * @property {string} prod_naam - De naam van het product.
+ * @property {string} prod_categorie - De categorie van het product.
+ * @property {string} prod_prijs - De prijs van het product.
+ * @property {string} prod_beschrijving - De beschrijving van het product.
+ * @property {string} prod_productspecificaties - De productspecificaties.
+ *
+ * Vertegenwoordigt een verzameling producten.
+ * @typedef {Product[]} ProductCollection
+ */
 const prods = [
     {
         prod_id: 1,
