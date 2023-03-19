@@ -115,6 +115,7 @@ section, h2, h3, body, main,
 /* Padding */
 /* Footer */
 footer {
+    border-radius: 5px;
     background-color: #4F94F0;
     padding: 20px;
     text-align: center;

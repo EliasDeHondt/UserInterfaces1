@@ -43,111 +43,62 @@
             <ol>
                 <!--Naam-->
                 <li> <!--Input elementene (1) text-->
-                    <!--Label-->
                     <label for="name-form">Name:</label>
-                    <!--Label-->
-                    <!--Input-->
                     <input type="text" id="name-form" name="name-form" size="20" required> <!--Validatie-attributen 1x size-->
-                    <!--Input-->
-                    <!--Span-->
                     <span class="error" id="name-form-error"></span>
-                    <!--Span-->
                 </li>
                 <!--Naam-->
-
                 <!--Email-->
                 <li> <!--Input elementene (2) email-->
-                    <!--Label-->
                     <label for="email-form">Email:</label>
-                    <!--Label-->
-                    <!--Input-->
                     <input type="email" id="email-form" name="email-form" required> <!--Input elementene (2) email-->
-                    <!--Input-->
-                    <!--Span-->
                     <span class="error" id="email-form-error"></span>
-                    <!--Span-->
                 </li>
                 <!--Email-->
-
                 <!--Leveringsadres-->
                 <li>
-                    <!--Label-->
                     <label for="leveringsadres">Leveringsadres:</label>
-                    <!--Label-->
-                    <!--Input-->
                     <input type="text" id="leveringsadres" name="leveringsadres" required>
-                    <!--Input-->
-                    <!--Span-->
                     <span class="error" id="leveringsadres-error"></span>
-                    <!--Span-->
                 </li>
                 <!--Leveringsadres-->
-
                 <!--Producten-->
                 <li>
-                    <!--Label-->
                     <label for="product">Product:</label>
-                    <!--Label-->
                     <select id="product" name="product" required>
                         <option value="">Select a product</option>
                     </select>
                 </li>
                 <!--Producten-->
-
                 <!--Kleur-->
                 <li> <!--Input elementene (3) color-->
-                    <!--Label-->
                     <input type="color" id="kleur" name="kleur" value="#4F94F0">
-                    <!--Label-->
-                    <!--Input-->
                     <label for="kleur">Kleur</label>
-                    <!--Input-->
-                    <!--Span-->
                     <span id="kleur-fout"></span>
-                    <!--Span-->
                 </li>
                 <!--Kleur-->
-
                 <!--Grootte-->
                 <li> <!--Input elementene (4) number-->
-                    <!--Label-->
                     <input type="number" id="grootte" name="grootte" min="10" max="20" step="1" required> <!--Validatie-attributen 3x min, max, step-->
-                    <!--Label-->
-                    <!--Input-->
                     <label for="grootte">Grootte</label>
-                    <!--Input-->
-                    <!--Span-->
                     <span id="grootte-fout"></span>
-                    <!--Span-->
                 </li>
                 <!--Grootte-->
-
                 <!--Materiaal-->
                 <li> <!--Input elementene (5) checkbox-->
-                    <!--Label-->
                     <label>Personalization Options:</label>
-                    <!--Label-->
                     <section>
                         <h2 class="hide">Plastic</h2>
-                        <!--Input-->
                         <input type="radio" id="option1" name="option" value="plastic" required>
-                        <!--Input-->
-                        <!--Label-->
                         <label for="option1">Plastic</label>
-                        <!--Label-->
                     </section>
                     <section>
                         <h2 class="hide">Stainless Steel</h2>
-                        <!--Input-->
                         <input type="radio" id="option2" name="option" value="steel" required>
-                        <!--Input-->
-                        <!--Label-->
                         <label for="option2">Stainless Steel</label>
-                        <!--Label-->
                     </section>
                 </li>
                 <!--Materiaal-->
-
                 <!--Verzend-->
                 <li> <!--Input elementene (6) submit-->
                     <button type="submit" id="verzendknop"></button>

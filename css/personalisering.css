@@ -22,21 +22,16 @@ textarea {
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
-    border: 2px solid #ccc;
     border-radius: 4px;
-    background-color: #f8f8f8;
     font-size: 16px;
     resize: none;
 }
 
 select {
-    width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
-    border: 2px solid #ccc;
     border-radius: 4px;
-    background-color: #f8f8f8;
     font-size: 16px;
 }
 
@@ -49,5 +44,11 @@ ol {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+form {
+    border-radius: 5px;
+    background-color: #4F94F0;
+    padding: 20px;
 }
 /* Personalisering */
