@@ -61,7 +61,7 @@
      *
      * @type {string}
      */
-    let html = '<table>';
+    let html = '<table class="product-data">';
 
     /**
      * Itereert door het toon_data-object en maakt tabelrijen met de gegevens.
@@ -69,9 +69,10 @@
     for (const [key, value] of Object.entries(toon_data)) {
         html += `
         <tr>
-            <td>${key}</td>
-            <td>${value}</td>
+            <td class="column1">${key}</td>
+            <td class="column2">${value}</td>
         </tr>
+        
     `;
     }
 

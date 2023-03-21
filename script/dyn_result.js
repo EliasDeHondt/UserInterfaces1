@@ -109,7 +109,7 @@
         'Uw optie': option,
     };
 
-    let html = '<table>';
+    let html = '<br><table class="product-data">';
 
     /**
      * Bouwt de HTML-code voor de tabel met de data om te tonen.
@@ -117,22 +117,35 @@
     for (const [key, value] of Object.entries(toon_data)) {
         html += `
         <tr>
-            <td>${key}</td>
-            <td>${
-            !value.startsWith('#') && heeft_productdetail(value) ? `<a href="${pro_detail_link}${prodNaam_naar_link_el(value)}.html" target="_blank">${value}</a>` : value
-        }</td>
+            <td class="column1">${key}</td>
+            <td class="column2">${!value.startsWith('#') && heeft_productdetail(value) ? `<a href="${pro_detail_link}${prodNaam_naar_link_el(value)}.html" target="_blank">${value}</a>` : value}</td>
         </tr>
     `;
     }
 
+
     html += `
-        <tr><td><br></td></tr>
-        <tr><td>Product informatie</td></tr>
-        <tr><td>Naam</td><td>${product.prod_naam}</td></tr>
-        <tr><td>Categorie</td><td>${product.prod_categorie}</td></tr>
-        <tr><td>Prijs</td><td>&euro; ${product.prod_prijs}</td></tr>
-        <tr><td>Beschrijving</td><td>${product.prod_beschrijving}</td></tr>
-        <tr><td>Specs</td><td>${product.prod_productspecificaties}</td></tr>
+        <br>
+        <!--<tr>-->
+        <!--<td class="column1">Naam</td>-->
+        <!--<td class="column2">${product.prod_naam}</td>-->
+        <!--</tr>-->
+        <tr>
+            <td class="column1">Categorie</td>
+            <td class="column2">${product.prod_categorie}</td>
+        </tr>
+        <tr>
+            <td class="column1">Prijs</td>
+            <td class="column2">&euro; ${product.prod_prijs}</td>
+        </tr>
+        <tr>
+            <td class="column1">Beschrijving</td>
+            <td class="column2">${product.prod_beschrijving}</td>
+        </tr>
+        <tr>
+            <td class="column1">Specs</td>
+            <td class="column2">${product.prod_productspecificaties}</td>
+        </tr>
     `;
 
     html += '</table>';
@@ -141,7 +154,9 @@
      * Bouwt de HTML-code voor de afbeelding van het product.
      */
     if (heeft_img(toon_data.Product)) {
-        html += `<br><hr><br><img src="${pro_image_link}${prodNaam_naar_link_el(toon_data.Product)}.png" width="500" height="600" alt="img">`;
+        html += `<img class="product-afbeelding" src="${pro_image_link}${prodNaam_naar_link_el(toon_data.Product)}.png" width="300" height="300" alt="${product.prod_naam}">
+                 <a href="/elias.dehondt/html/producten.html" class="btn">Doorgaan Met Winkelen</a>
+    `;
     }
 
     document.getElementsByTagName('main')[0].getElementsByTagName('section')[0].insertAdjacentHTML('beforeend', html);

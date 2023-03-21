@@ -2,9 +2,56 @@
  * @author Elias De Hondt
  * @see https://eliasdh.com
  */
-
 /* Bevestigingspagina */
-tr {
-    font-weight: bold;
+.column1  {
+    padding: 5px;
+    background-color: #4F94F0;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+}
+
+.column2  {
+    padding: 5px;
+    background-color: white;
+    color: #6c757d;
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+}
+
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: #ffffff;
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 20px;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    margin: 20px auto 0 auto;
+    padding: 15px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    color: #ffffff;
+    background-color: #4F94F0;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        width: 100%;
+    }
 }
 /* Bevestigingspagina */
