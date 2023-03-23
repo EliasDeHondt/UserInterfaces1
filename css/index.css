@@ -1,0 +1,31 @@
+/**
+ * @author Elias De Hondt
+ * @see https://eliasdh.com
+ */
+
+/* Home */
+/* Grid Main */
+main {
+    display: grid; /* Dit zorgt ervoor dat de grid duidelijk getoond wordt en de layout correct is. */
+    gap: 10px 10px;
+    grid-template-areas: 'info product'
+                         'getuigenissen product';
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto;
+    list-style: none;
+    margin: 10px;
+}
+
+.info:nth-child(1) { grid-area: info; }
+.getuigenissen:nth-child(2) { grid-area: getuigenissen; }
+.product:nth-child(3) { grid-area: product; }
+
+.product {
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+/* Grid Main */
+article, header {
+    background: #FFFFFF;
+}
+/* Home */

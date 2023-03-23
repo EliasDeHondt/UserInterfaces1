@@ -1,0 +1,54 @@
+/**
+ * @author Elias De Hondt
+ * @see https://eliasdh.com
+ */
+
+/* Personalisering */
+/* JS Class */
+.valid-input {
+    background-color: #d4edda !important;
+    border-color: #3ac03a !important;
+}
+
+.invalidity {
+    background-color: #f8d7da !important;
+    border-color: #dc3545 !important;
+}
+/* JS Class */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-size: 16px;
+    resize: none;
+}
+
+select {
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+label {
+    font-weight: bold;
+}
+
+ol {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+form {
+    border-radius: 5px;
+    background-color: #4F94F0;
+    padding: 20px;
+}
+/* Personalisering */

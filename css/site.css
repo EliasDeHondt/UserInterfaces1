@@ -1,0 +1,134 @@
+/**
+ * @author Elias De Hondt
+ * @see https://eliasdh.com
+ */
+
+/* Verbergt elementen met de "hide" class */
+.hide {
+    display:none /* Dit wordt gebruikt voor de titels te hiden. */
+}
+
+/* Stijl van links in de pagina */
+a {
+    color: #4F94F0; /* Linkkleur */
+    text-decoration: none; /* Geen onderstreepte links */
+}
+
+/* Stijl van links bij hover */
+a:hover {
+    text-decoration: underline; /* Onderstreepte links bij hover */
+}
+/* Grid Body */
+body {
+    background: #00719c; /* Achtergrondkleur */
+    grid-template-areas: 'header' 'main' 'footer'; /* Definitie van grid areas */
+    grid-template-rows: 100%; /* Enkele kolom */
+    grid-template-columns: auto auto auto; /* Hoogte van grid rows is automatisch */
+    list-style: none; /* Geen bullets bij ongenummerde lijsten */
+}
+
+/* Positionering van grid areas */
+header:nth-child(1) { grid-area: header; }
+main:nth-child(2) { grid-area: main; }
+footer:nth-child(3) { grid-area: footer; }
+/* Grid Body */
+/* Font */
+body {
+    font-family: sans-serif; /* Lettertype voor de pagina */
+    margin: 0; /* Geen marges rond de pagina */
+}
+/* Font */
+/* Nav */
+.nav-logo {
+    height: 18.2%; /* Hoogte van de navigatielogo */
+    width: 18.2%; /* Breedte van de navigatielogo */
+}
+
+.dropdown-content {
+    display: none; /* Verbergt dropdown content */
+    position: absolute; /* Plaatsing van dropdown content */
+    min-width: 160px; /* Minimale breedte van dropdown content */
+    z-index: 1; /* Layering van dropdown content */
+}
+
+.dropdown-content a {
+    color: #FFFFFF; /* Kleur van dropdown links */
+    padding: 12px 16px;
+    text-decoration: none;
+    text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block; /* Wanneer de gebruiker over producten staat met zijn of haar cursor worden de extra opties getoond */
+}
+
+.dropdown .drop {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: #FFFFFF;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #00719c;
+}
+
+li {
+    display: inline-block; /* Zodat de buttons van een navigatiebalk op de correcte (Centraal in het midden staan). */
+}
+
+li a {
+    display: block; /* Zodat de buttons van een navigatiebalk op de correcte (Centraal in het midden staan). */
+    color: #FFFFFF;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #4F94F0;
+}
+
+.active {
+    background-color: #4F94F0;
+}
+/* Nav */
+/* Titel */
+h2,h3 {
+    margin-top: 0;
+    font-size: 1.5em;
+    color: #4F94F0;
+}
+/* Titel */
+/* Padding */
+section, h2, h3, body, main,
+.padel-rackets, .padel-schoenen, .padel-balls, .padel-tassen, .producten, .afbeelding, .product-specificaties, .product-details, .omschrijving, .info, .getuigenissen, .product {
+    padding: 10px;
+}
+/* Padding */
+/* Footer */
+footer {
+    border-radius: 5px;
+    background-color: #4F94F0;
+    padding: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 14px;
+}
+
+footer a {
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: #00719c;
+}
+/* Footer */
