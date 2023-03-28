@@ -28,7 +28,7 @@ body {
 }
 
 .container {
-    background-color: #ffffff;
+    background-color: #4F94F0;
     margin: 0 auto;
     max-width: 600px;
     padding: 20px;
@@ -43,15 +43,9 @@ body {
     font-size: 16px;
     font-weight: 600;
     text-align: center;
-    color: #ffffff;
-    background-color: #4F94F0;
+    color: #4F94F0;
+    background-color: #FFFFFF;
     border-radius: 30px;
     text-decoration: none;
-}
-
-@media screen and (max-width: 600px) {
-    .container {
-        width: 100%;
-    }
 }
 /* Bevestigingspagina */

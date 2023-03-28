@@ -31,7 +31,4 @@ main {
 .product-details:nth-child(3) { grid-area: product-details; }
 .omschrijving:nth-child(4) { grid-area: omschrijving; }
 /* Grid Main */
-article, header, section {
-    background: #FFFFFF;
-}
 /* Productdetail */

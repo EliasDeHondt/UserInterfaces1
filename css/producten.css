@@ -4,7 +4,7 @@
  */
 
 /* Producten */
-/* Filter Groepen */
+/* Filter | Groepen */
 [value="alle1"]:checked ~ .filter [for="alle1"],
 [value="alle2"]:checked ~ .filter [for="alle2"],
 [value="alle3"]:checked ~ .filter [for="alle3"],
@@ -47,7 +47,7 @@
     display: none;
 }
 
-input { /* Zorgt ervoor dat de radio buttons dichter bij elkaar staan */
+.radio { /* Zorgt ervoor dat de radio buttons dichter bij elkaar staan */
     position: absolute; /* Dit is ervoor te zorgen dat de Radio Buttons dichter bij elkaar staan. */
     opacity: 0;
     cursor: pointer;
@@ -64,17 +64,34 @@ input { /* Zorgt ervoor dat de radio buttons dichter bij elkaar staan */
 .filter label {
     padding: 5px 10px;
     line-height: normal;
-    cursor: pointer; /* :°) */
+    cursor: pointer;
 }
 
 .filterOL label:hover {
-    background: #4F94F0;
+    background: #FFFFFF;
+    color: #4F94F0;
 }
 
 ol {
     padding: 10px 10px 10px 40px;
 }
-/* Filter Groepen */
+
+.zoekbalk {
+    background-color: #4F94F0;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.zoekbalk::placeholder {
+    color: #FFFFFF;
+    opacity: 0.8;
+}
+/* Filter | Groepen */
 /* Grid article */
 article {
     display: grid; /* Dit zorgt ervoor dat de grid duidelijk getoond wordt en de layout correct is. */
@@ -89,7 +106,4 @@ article {
 .filterG:nth-child(1) { grid-area: filterG; }
 .productenG:nth-child(2) { grid-area: productenG; }
 /* Grid article */
-article, header, section, .filter label:hover { /* Definieert de stijl van de producten en andere secties */
-    background: #FFFFFF;
-}
 /* Producten */
