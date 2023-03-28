@@ -68,7 +68,8 @@ input { /* Zorgt ervoor dat de radio buttons dichter bij elkaar staan */
 }
 
 .filterOL label:hover {
-    background: #4F94F0;
+    background: #FFFFFF;
+    color: #4F94F0;
 }
 
 ol {
@@ -89,7 +90,4 @@ article {
 .filterG:nth-child(1) { grid-area: filterG; }
 .productenG:nth-child(2) { grid-area: productenG; }
 /* Grid article */
-article, header, section, .filter label:hover { /* Definieert de stijl van de producten en andere secties */
-    background: #FFFFFF;
-}
 /* Producten */

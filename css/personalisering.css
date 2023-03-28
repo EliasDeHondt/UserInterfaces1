@@ -44,11 +44,14 @@ ol {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
 }
 
 form {
-    border-radius: 5px;
-    background-color: #4F94F0;
-    padding: 20px;
+    padding: 10px;
+    background: #4F94F0;
+    color: #FFFFFF;
+    font-size: 20px;
+    border-radius: 20px;
 }
 /* Personalisering */

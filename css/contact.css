@@ -13,6 +13,8 @@ body {
 article {
     margin: 0 auto;
     max-width: 800px;
+    padding-left: 10px;
+    padding-bottom: 10px;
 }
 /* Article */
 /* Contact data */
