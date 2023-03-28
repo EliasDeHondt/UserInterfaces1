@@ -1,6 +1,5 @@
 /**
  * @author Elias De Hondt
- * @author Nicky
  * @see https://eliasdh.com
  * @version A2_v1
  */
@@ -36,14 +35,11 @@ document.getElementById('zoekbalk').onkeyup = function () {
     let maat = document.querySelector('input[name="Maat"]:checked').value;
     let geslacht = document.querySelector('input[name="Geslacht"]:checked').value;
     let merk = document.querySelector('input[name="Merk"]:checked').value;
-
     let producten = document.getElementsByClassName('productF');
-
     for (let i = 0; i < producten.length; i++) {
         const prodEl = producten[i];
         const prodElAttr = prodEl.getAttribute("data-category").split(' ');
         const prodName = prodEl.childNodes[1].children[0].firstChild.data;
-
         if (
             (
                 kleur === 'alle1' ||
