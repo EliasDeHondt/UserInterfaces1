@@ -21,7 +21,7 @@
             <nav>
                 <h2 class="hide">menu</h2>
                 <ul>
-                    <li><img class="nav-logo" alt="logo" src="/elias.dehondt/media/images/logo.png"></li>
+                    <li><img class="nav-logo" alt="logo" src="/media/images/logo.png"></li>
                     <li><a href="/elias.dehondt/index.html">Home</a></li>
                     <li class="dropdown">
                         <a class="active" href="#producten">Producten</a>
@@ -43,33 +43,39 @@
                 <!--Filter-->
                 <h2 class="hide">Filter</h2>
                 <!--Alle-->
-                <input type="radio" id="alle1" name="kleur" value="alle1" checked>
-                <input type="radio" id="alle2" name="Maat" value="alle2" checked>
-                <input type="radio" id="alle3" name="Geslacht" value="alle3" checked>
-                <input type="radio" id="alle4" name="Merk" value="alle4" checked>
+                <input class="radio" type="radio" id="alle1" name="kleur" value="alle1" checked>
+                <input class="radio" type="radio" id="alle2" name="Maat" value="alle2" checked>
+                <input class="radio" type="radio" id="alle3" name="Geslacht" value="alle3" checked>
+                <input class="radio" type="radio" id="alle4" name="Merk" value="alle4" checked>
                 <!--Alle-->
                 <!--kleur-->
-                <input type="radio" id="blauw" name="kleur" value="blauw">
-                <input type="radio" id="zwart" name="kleur" value="zwart">
-                <input type="radio" id="geel" name="kleur" value="geel">
-                <input type="radio" id="groen" name="kleur" value="groen">
+                <input class="radio" type="radio" id="blauw" name="kleur" value="blauw">
+                <input class="radio" type="radio" id="zwart" name="kleur" value="zwart">
+                <input class="radio" type="radio" id="geel" name="kleur" value="geel">
+                <input class="radio" type="radio" id="groen" name="kleur" value="groen">
                 <!--kleur-->
                 <!--Maat-->
-                <input type="radio" id="small" name="Maat" value="small">
-                <input type="radio" id="medium" name="Maat" value="medium">
-                <input type="radio" id="large" name="Maat" value="large">
+                <input class="radio" type="radio" id="small" name="Maat" value="small">
+                <input class="radio" type="radio" id="medium" name="Maat" value="medium">
+                <input class="radio" type="radio" id="large" name="Maat" value="large">
                 <!--Maat-->
                 <!--Geslacht-->
-                <input type="radio" id="man" name="Geslacht" value="man">
-                <input type="radio" id="vrouw" name="Geslacht" value="vrouw">
-                <input type="radio" id="unisex" name="Geslacht" value="unisex">
+                <input class="radio" type="radio" id="man" name="Geslacht" value="man">
+                <input class="radio" type="radio" id="vrouw" name="Geslacht" value="vrouw">
+                <input class="radio" type="radio" id="unisex" name="Geslacht" value="unisex">
                 <!--Geslacht-->
                 <!--Merk-->
-                <input type="radio" id="adidas" name="Merk" value="adidas">
-                <input type="radio" id="asics" name="Merk" value="asics">
-                <input type="radio" id="puma" name="Merk" value="puma">
+                <input class="radio" type="radio" id="adidas" name="Merk" value="adidas">
+                <input class="radio" type="radio" id="asics" name="Merk" value="asics">
+                <input class="radio" type="radio" id="puma" name="Merk" value="puma">
                 <!--Merk-->
+                <!--Filter | Groepen-->
                 <ol class="filterG filterOL">
+                    <li>
+                        <!--Zoeken-->
+                        <label for="zoekbalk"></label><input class="zoekbalk" type="text" id="zoekbalk" placeholder="Zoeken...">
+                        <!--Zoeken-->
+                    </li>
                     <li>
                         <!--kleur-->
                         <ol>
@@ -112,31 +118,7 @@
                         <!--Merk-->
                     </li>
                 </ol>
-                <!--Filter-->
-<!--                &lt;!&ndash;Groepen&ndash;&gt;-->
-<!--                <ol class="filter">-->
-<!--                    <li>-->
-<!--                        <label>Padel Rackets-->
-<!--                            <input type="radio" name="groepen" value="Padel Rackets">-->
-<!--                        </label>-->
-<!--                    </li>-->
-<!--                    <li>-->
-<!--                        <label>Padel Schoenen-->
-<!--                            <input type="radio" name="groepen" value="Padel Schoenen">-->
-<!--                        </label>-->
-<!--                    </li>-->
-<!--                    <li>-->
-<!--                        <label>Padel Balls-->
-<!--                            <input type="radio" name="groepen" value="Padel Balls">-->
-<!--                        </label>-->
-<!--                    </li>-->
-<!--                    <li>-->
-<!--                        <label>Padel Tassen-->
-<!--                            <input type="radio" name="groepen" value="Padel Tassen">-->
-<!--                        </label>-->
-<!--                    </li>-->
-<!--                </ol>-->
-<!--                &lt;!&ndash;Groepen&ndash;&gt;-->
+                <!--Filter | Groepen-->
                 <!--Producten-->
                 <ol class="productenF productenG">
                     <li>

@@ -41,8 +41,9 @@ body {
 /* Font */
 /* Nav */
 .nav-logo {
-    height: 18.2%; /* Hoogte van de navigatielogo */
-    width: 18.2%; /* Breedte van de navigatielogo */
+    padding-top: 10px;
+    height: 50%; /* Hoogte van de navigatielogo */
+    width: 50%; /* Breedte van de navigatielogo */
 }
 
 .dropdown-content {
@@ -52,7 +53,6 @@ body {
     z-index: 1; /* Layering van dropdown content */
     padding: 10px;
     border: 2px solid #FFFFFF;
-
 }
 
 .dropdown:hover .dropdown-content {
