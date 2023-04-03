@@ -77,19 +77,20 @@ ol {
 }
 
 .zoekbalk {
-    background-color: #4F94F0;
-    color: #FFFFFF;
-    border: none;
-    border-radius: 5px;
-    padding: 8px 12px;
-    margin-bottom: 10px;
-    width: 100%;
-    box-sizing: border-box;
-}
 
-.zoekbalk::placeholder {
-    color: #FFFFFF;
-    opacity: 0.8;
+    font-size: inherit;
+    border: 1px solid rgba(255,255,255,.1);
+    border-radius: .5em;
+    padding: .5em 2em .5em .75em;
+    margin: 0;
+    background: hsla(220,7%,17%,.66);
+    color: #fff;
+    outline: none;
+    transition: all .5s ease;
+    box-shadow: 0 5px 20px #2f3237bf,0 5px 10px #2f3237bf;
+    grid-row: 1;
+    grid-column: 1;
+    width: 100%
 }
 /* Filter | Groepen */
 /* Grid article */
