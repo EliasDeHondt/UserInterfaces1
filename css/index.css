@@ -25,4 +25,24 @@ main {
     grid-row-end: 3;
 }
 /* Grid Main */
+/* Responsief */
+@media only screen and (max-width: 600px) {
+    main {
+        display: grid; /* Dit zorgt ervoor dat de grid duidelijk getoond wordt en de layout correct is. */
+        gap: 10px 10px;
+        grid-template-areas: 'info'
+                             'getuigenissen'
+                             'product';
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto auto;
+        list-style: none;
+        margin: 10px;
+    }
+
+    .product {
+        grid-row-start: none;
+        grid-row-end: none;
+    }
+}
+/* Responsief */
 /* Home */

@@ -3,22 +3,25 @@
  * @see https://eliasdh.com
  */
 
-/* Verbergt elementen met de "hide" class */
-.hide {
+/* Niet geclassificeerd */
+.hide { /* Verbergt elementen met de "hide" class */
     display:none /* Dit wordt gebruikt voor de titels te hiden. */
 }
 
-/* Stijl van links in de pagina */
-a {
+a { /* Stijl van links in de pagina */
     background: #4F94F0;
     color: #FFFFFF;
     text-decoration: none; /* Geen onderstreepte links */
 }
 
-/* Stijl van links bij hover */
-a:hover {
+a:hover { /* Stijl van links bij hover */
     text-decoration: underline; /* Onderstreepte links bij hover */
 }
+
+img {
+    border-radius: 20px;
+}
+/* Niet geclassificeerd */
 /* Grid Body */
 body {
     background: #FFFFFF; /* Achtergrondkleur */
@@ -167,3 +170,9 @@ body::-webkit-scrollbar-corner {
     border-radius: var(--scrollbar-border-radius, 4px);
 }
 /* Scrollbars */
+/* Responsief */
+@media only screen and (max-width: 750px) {
+
+
+}
+/* Responsief */

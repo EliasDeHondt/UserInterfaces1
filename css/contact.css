@@ -32,6 +32,17 @@ address {
 /* Map */
 iframe {
     border: none;
+    width: 500px;
+    height: 500px;
 }
 /* Map */
+/* Responsief */
+@media only screen and (max-width: 600px) {
+    iframe {
+        border: none;
+        width: 300px;
+        height: 300px;
+    }
+}
+/* Responsief */
 /* Contact */

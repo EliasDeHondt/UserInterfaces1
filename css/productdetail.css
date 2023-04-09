@@ -4,16 +4,6 @@
  */
 
 /* Productdetail */
-/* Button */
-button {
-    background-color: #FF0000;
-    border: none;
-    font-size: 18px;
-    color: #FFFFFF;
-    padding: 10px;
-    width: 250px;
-}
-/* Button */
 /* Grid Main */
 main {
     display: grid; /* Dit zorgt ervoor dat de grid duidelijk getoond wordt en de layout correct is. */
@@ -31,4 +21,26 @@ main {
 .product-details:nth-child(3) { grid-area: product-details; }
 .omschrijving:nth-child(4) { grid-area: omschrijving; }
 /* Grid Main */
+/* Responsief */
+@media only screen and (max-width: 1000px) {
+    img {
+        width: 300px;
+        height: 300px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    main {
+        display: grid; /* Dit zorgt ervoor dat de grid duidelijk getoond wordt en de layout correct is. */
+        gap: 10px 10px;
+        grid-template-areas: 'afbeelding'
+                             'product-specificaties'
+                             'omschrijving'
+                             'product-details';
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto auto auto;
+        list-style: none;
+        margin: 10px;
+    }
+}
+/* Responsief */
 /* Productdetail */

@@ -1,7 +1,7 @@
 /**
  * @author Elias De Hondt
  * @see https://eliasdh.com
- * @version A2_v1
+ * @version A2_v2
  */
 
 /* Prod Zoekbalk */
