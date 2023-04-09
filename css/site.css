@@ -102,6 +102,82 @@ li a:hover:not(.active) {
     color: #4F94F0;
     border-radius: 100px;
 }
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .35s, visibility .35s, height .35s;
+    overflow: hidden;
+    background: #000000;
+    z-index: -1;
+}
+
+/* Nav Main */
+#main-menu {
+    max-width: 800px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 9;
+}
+/* Nav Main */
+/* Nav Hamburger */
+#hamburger-input{
+    display: none;
+}
+
+#hamburger-menu {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 50px;
+    height: 50px;
+    display: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(
+            to bottom,
+            #4F94F0, #4F94F0 20%,
+            #FFFFFF 20%, #FFFFFF 40%,
+            #4F94F0 40%, #4F94F0 60%,
+            #FFFFFF 60%, #FFFFFF 80%,
+            #4F94F0 80%, #4F94F0 100%
+    );
+}
+
+#hamburger-menu #sidebar-menu {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 200px;
+    height: 100%;
+    background-color: #4F94F0;
+    transition: 0.3s;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+#hamburger-input:checked + #hamburger-menu #sidebar-menu {
+    visibility: visible;
+    left: 0;
+}
+
+#hamburger-input:checked ~ .overlay{
+    visibility: visible;
+    opacity: 0.4;
+}
+/* Nav Hamburger */
 /* Nav */
 /* Titel */
 h2,h3 {
@@ -160,10 +236,6 @@ body::-webkit-scrollbar-thumb {
     border-radius: var(--scrollbar-border-radius, 4px);
 }
 
-body::-webkit-scrollbar-track {
-    background: #A1A1AA;
-}
-
 body::-webkit-scrollbar-corner {
     background: #FFFFFF;
     border: var(--scrollbar-border-thickness, 3px) solid #ffffff;
@@ -171,8 +243,12 @@ body::-webkit-scrollbar-corner {
 }
 /* Scrollbars */
 /* Responsief */
-@media only screen and (max-width: 750px) {
-
-
+@media screen and (max-width: 750px) {
+    #main-menu {
+        display: none;
+    }
+    #hamburger-menu {
+        display: inline;
+    }
 }
 /* Responsief */

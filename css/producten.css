@@ -76,8 +76,7 @@ ol {
     padding: 10px 10px 10px 40px;
 }
 
-.zoekbalk {
-
+.zoekbalk, input[type=number]{
     font-size: inherit;
     border: 1px solid rgba(255,255,255,.1);
     border-radius: .5em;
