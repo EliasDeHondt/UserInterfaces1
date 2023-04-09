@@ -138,3 +138,32 @@ article, header, section {
     border-radius: 20px;
 }
 /* Footer */
+/* Scrollbars */
+body {
+    --scrollbar-border-thickness: 0px;
+    --scrollbar-width: 10px;
+    --scrollbar-border-radius: 5px;
+    --scrollbar-height: 10px;
+    --show-double-buttons: none;
+}
+body::-webkit-scrollbar {
+    width: var(--scrollbar-width, 20px);
+    height: var(--scrollbar-height, 20px);
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #3B82F6;
+    border: var(--scrollbar-border-thickness, 3px) solid #ffffff;
+    border-radius: var(--scrollbar-border-radius, 4px);
+}
+
+body::-webkit-scrollbar-track {
+    background: #A1A1AA;
+}
+
+body::-webkit-scrollbar-corner {
+    background: #FFFFFF;
+    border: var(--scrollbar-border-thickness, 3px) solid #ffffff;
+    border-radius: var(--scrollbar-border-radius, 4px);
+}
+/* Scrollbars */
