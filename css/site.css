@@ -114,6 +114,12 @@ li a:hover:not(.active) {
     border-radius: 100px;
 }
 
+.topnav a.active {
+    background: #FFFFFF;
+    color: #4F94F0;
+    border-radius: 100px;
+}
+
 .topnav a {
     float: left;
     display: block;
@@ -122,12 +128,6 @@ li a:hover:not(.active) {
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
-}
-
-.topnav a.active {
-    background: #FFFFFF;
-    color: #4F94F0;
-    border-radius: 100px;
 }
 
 .topnav .icon {

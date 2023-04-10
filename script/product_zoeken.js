@@ -98,5 +98,50 @@
             }
         }
     }
+
+    //sorteringen
+    document.getElementById('sort_naam').addEventListener('click', () => {
+        let sortRadio = document.querySelector('input[name="sort_naam"]:checked').value;
+        sortCats((prodsInCat) => {
+            let sort_order = new Map();
+            for (const i in prodsInCat) sort_order.set(i, prodsInCat[i].naam);
+            prodMap = new Map([...sort_order.entries()].sort((a, b) => { return sortRadio === 'asc' ? a[1].localeCompare(b[1]) : b[1].localeCompare(a[1]) }));
+            prodsInCat = [];
+            for (let [key, value] of prodMap.entries()) prodsInCat.push(key);
+            return prodsInCat;
+        });
+    });
+
+    document.getElementById('sort_prijs').addEventListener('click', () => {
+        let sortRadio = document.querySelector('input[name="sort_prijs"]:checked').value;
+        sortCats((prodsInCat) => {
+            let sort_order = new Map();
+            for (const i in prodsInCat) sort_order.set(i, parseFloat(prodsInCat[i].prijs));
+            prodMap = new Map([...sort_order.entries()].sort((a, b) => { return sortRadio === 'asc' ? a[1] > b[1] : a[1] < b[1] }));
+            prodsInCat = [];
+            for (let [key, value] of prodMap.entries()) prodsInCat.push(key);
+            return prodsInCat;
+        });
+    });
+
+    function sortCats(fun) {
+        let lists = document.querySelectorAll('#productenP > li');
+        for (let cat_i = 0; cat_i < lists.length; cat_i++) {
+            const catElList = lists[cat_i].querySelectorAll('li[id]');
+            const prodsInCat = {};
+            for (let prod_i = 0; prod_i < catElList.length; prod_i++) {
+                const prod = catElList[prod_i];
+                const prod_id = prod.getAttribute('id');
+                prodsInCat[prod_id] = {
+                    naam: prods[prod_id].prod_naam,
+                    prijs: prods[prod_id].prod_prijs,
+                    el: prod,
+                };
+            }
+            let prodsInCatFilterd = fun(prodsInCat);
+            lists[cat_i].innerHTML = '';
+            for (const i in prodsInCatFilterd) lists[cat_i].appendChild(prodsInCat[prodsInCatFilterd[i]].el);
+        }
+    }
 }
 /* Product Zoeken */
