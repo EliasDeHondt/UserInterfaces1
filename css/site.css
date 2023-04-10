@@ -47,6 +47,15 @@ body {
     padding-top: 10px;
     height: 50%; /* Hoogte van de navigatielogo */
     width: 50%; /* Breedte van de navigatielogo */
+    border-radius: 0;
+}
+
+.hamburger-nav {
+    padding-top: 10px;
+    padding-left: 10px;
+    height: 5%; /* Hoogte van de navigatielogo */
+    width: 5%; /* Breedte van de navigatielogo */
+    border-radius: 0;
 }
 
 .li-logo {
