@@ -60,7 +60,7 @@
      * prod_id: number}
      * }
      */
-    const product = prods[params.get('product') - 1];
+    const product = prods[params.get('product')];
 
     /**
      * De geselecteerde kleur uit de querystring.

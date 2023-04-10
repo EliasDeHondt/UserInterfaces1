@@ -13,10 +13,10 @@
  */
 const pSelect = document.getElementById('product');
 
-prods.forEach((val) => {
+for (const i in prods) {
     let op = document.createElement('option');
-    op.setAttribute('value', val.prod_id);
-    op.innerHTML = val.prod_naam;
+    op.setAttribute('value', i);
+    op.innerHTML = prods[i].prod_naam;
     pSelect.append(op);
-});
+}
 /* Dyn Form */
