@@ -49,9 +49,15 @@ body {
     width: 50%; /* Breedte van de navigatielogo */
 }
 
+.li-logo {
+    display: inline-block; /* Zodat de buttons van een navigatiebalk op de correcte (Centraal in het midden staan). */
+}
+
 .dropdown-content {
     display: none; /* Verbergt dropdown content */
-    position: absolute; /* Plaatsing van dropdown content */
+    position: absolute;
+    top: 65px; /* Verplaats de .dropdown-content 50px onder de button */
+    left: 200px; /* Verplaats de .dropdown-content helemaal naar links ten opzichte van de button */
     min-width: 160px; /* Minimale breedte van dropdown content */
     z-index: 1; /* Layering van dropdown content */
     padding: 10px;
@@ -94,90 +100,36 @@ li a {
 }
 
 li a:hover:not(.active) {
-    background-color: #4F94F0;
-}
-
-.active {
     background: #FFFFFF;
     color: #4F94F0;
     border-radius: 100px;
 }
 
-.overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity .35s, visibility .35s, height .35s;
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a.active {
+    background: #FFFFFF;
+    color: #4F94F0;
+    border-radius: 100px;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+.topnav {
     overflow: hidden;
-    background: #000000;
-    z-index: -1;
-}
-
-/* Nav Main */
-#main-menu {
-    max-width: 800px;
-    width: 100%;
-    height: 100%;
-    margin: 0 auto;
-    padding: 0;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    z-index: 9;
-}
-/* Nav Main */
-/* Nav Hamburger */
-#hamburger-input{
-    display: none;
-}
-
-#hamburger-menu {
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    width: 50px;
-    height: 50px;
-    display: none;
-    border: none;
-    padding: 0;
-    margin: 0;
-    background: linear-gradient(
-            to bottom,
-            #4F94F0, #4F94F0 20%,
-            #FFFFFF 20%, #FFFFFF 40%,
-            #4F94F0 40%, #4F94F0 60%,
-            #FFFFFF 60%, #FFFFFF 80%,
-            #4F94F0 80%, #4F94F0 100%
-    );
-}
-
-#hamburger-menu #sidebar-menu {
-    visibility: hidden;
-    position: fixed;
-    top: 0;
-    left: -250px;
-    width: 200px;
-    height: 100%;
+    border-radius: 100px;
     background-color: #4F94F0;
-    transition: 0.3s;
-    padding: 0 10px;
-    box-sizing: border-box;
 }
-
-#hamburger-input:checked + #hamburger-menu #sidebar-menu {
-    visibility: visible;
-    left: 0;
-}
-
-#hamburger-input:checked ~ .overlay{
-    visibility: visible;
-    opacity: 0.4;
-}
-/* Nav Hamburger */
 /* Nav */
 /* Titel */
 h2,h3 {
@@ -244,11 +196,60 @@ body::-webkit-scrollbar-corner {
 /* Scrollbars */
 /* Responsief */
 @media screen and (max-width: 750px) {
-    #main-menu {
-        display: none;
+    .topnav ul:not(:first-child) {display: none;}
+    .topnav a.icon {
+        float: right;
+        display: block;
     }
-    #hamburger-menu {
+    .dropdown-content {
         display: inline;
+        position: static;
+        min-width: 0;
+        z-index: auto;
+        padding: 0;
+        border: 0 none;
+    }
+
+    li {
+        display: list-item;
+        list-style-type: none;
+    }
+
+    li a {
+        display: inline-block;
+        color: inherit;
+        text-align: left;
+        padding: initial;
+        text-decoration: none;
+    }
+
+    li a:hover:not(.active) {
+        background: initial;
+        color: inherit;
+        border-radius: initial;
+    }
+
+    .topnav a {
+        float: none;
+        display: inline-block;
+        color: inherit;
+        text-align: left;
+        text-decoration: none;
+        font-size: medium;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive ul {
+        float: none;
+        display: block;
+        text-align: left;
     }
 }
 /* Responsief */

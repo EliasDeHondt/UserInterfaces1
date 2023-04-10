@@ -1,3 +1,10 @@
+/**
+ * @author Elias De Hondt
+ * @see https://eliasdh.com
+ * @version A2_v2
+ */
+
+/* Product Tonen */
 {
     addCat(Padel_Rackets);
     addCat(Padel_Schoenen);
@@ -9,7 +16,7 @@
         const catList = document.createElement('li');
         const catInnerOl = document.createElement('ol');
         for (let i in prods) {
-            if (prods[i].prod_categorie != catnaam) continue;
+            if (prods[i].prod_categorie !== catnaam) continue;
             const prodhref = prods[i].prod_naam.replace(/\s/g, '').toLowerCase();
             const li = document.createElement('li');
             li.setAttribute('id', i);
@@ -48,5 +55,5 @@
         catList.appendChild(catInnerOl);
         productenP.appendChild(catList);
     }
-
 }
+/* Product Tonen */

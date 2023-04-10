@@ -80,7 +80,7 @@ ol {
     font-size: inherit;
     border: 1px solid rgba(255,255,255,.1);
     border-radius: .5em;
-    padding: .5em 2em .5em .75em;
+    padding: 10px;
     margin: 0;
     background: hsla(220,7%,17%,.66);
     color: #fff;
@@ -89,7 +89,7 @@ ol {
     box-shadow: 0 5px 20px #2f3237bf,0 5px 10px #2f3237bf;
     grid-row: 1;
     grid-column: 1;
-    width: 100%
+    width: 100%;
 }
 /* Filter | Groepen */
 /* Grid article */
@@ -106,4 +106,22 @@ article {
 .filterG:nth-child(1) { grid-area: filterG; }
 .productenG:nth-child(2) { grid-area: productenG; }
 /* Grid article */
+/* Responsief */
+@media only screen and (max-width: 1430px) {
+    article {
+        display: grid; /* Dit zorgt ervoor dat de grid duidelijk getoond wordt en de layout correct is. */
+        gap: 10px 10px;
+        grid-template-areas: 'filterG'
+                             'productenG';
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto;
+        list-style: none;
+        margin: 10px;
+    }
+
+    .zoekbalk, input[type=number]{
+        width: 50%;
+    }
+}
+/* Responsief */
 /* Producten */

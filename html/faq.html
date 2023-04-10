@@ -18,12 +18,13 @@
         <h1 class="hide">FAQ</h1>
         <header>
             <!--Top Navbar-->
-            <nav>
-                <h2 class="hide">menu</h2>
+            <nav class="topnav" id="myTopnav">
+                <h2 class="hide">Menu</h2>
                 <ul>
-                    <li><img class="nav-logo" alt="logo" src="/media/images/logo.png"></li>
+                    <li class="li-logo"><img class="nav-logo" alt="logo" src="/elias.dehondt/media/images/logo.png"></li>
                     <li><a href="/elias.dehondt/index.html">Home</a></li>
-                    <li class="dropdown"><a href="/elias.dehondt/html/producten.html">Producten</a>
+                    <li class="dropdown">
+                        <a href="/elias.dehondt/html/producten.html">Producten</a>
                         <ul class="dropdown-content">
                             <li><a href="/elias.dehondt/html/productdetail/padelrackets1.html">Padel Rackets 1</a></li>
                             <li><a href="/elias.dehondt/html/productdetail/padelrackets2.html">Padel Rackets 2</a></li>
@@ -34,6 +35,9 @@
                     <li><a class="active" href="#faq">FAQ</a></li>
                     <li><a href="/elias.dehondt/html/contact.html">Contact</a></li>
                 </ul>
+                <a href="javascript:void(0);" class="icon" onclick="nav()">
+                    <i>=</i>
+                </a>
             </nav>
             <!--Top Navbar-->
         </header>
@@ -86,6 +90,9 @@
                 <!--Vragen En Antwoorden-->
             </article>
         </main>
+        <!--JS-->
+        <script src="/elias.dehondt/script/responsive_navigation.js"></script>
+        <!--JS-->
         <footer>
             <!--Bottom-->
             <p>Design by <a href="https://www.eliasdh.com">Elias De Hondt.</a></p>

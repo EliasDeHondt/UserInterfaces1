@@ -1,11 +1,11 @@
 /**
- * @author Nicky
+ * @author Elias De Hondt
  * @see https://eliasdh.com
- * @version A2_v2_nt
+ * @version A2_v2
  */
 
+/* Product Zoeken */
 {
-
     const zoekbalk = 'zoekbalk';
     const zoekbedrag = 'zoekbedrag';
 
@@ -78,26 +78,17 @@
         } else if (!status_ok && cause_filter.indexOf(cause) === -1) {
             //nok en niet aanwezig
             cause_filter.push(cause);
-            evalProd(el, cause, cause_filter, status_ok);
+            evalProd(el, cause_filter, status_ok);
         } else {
             if (status_ok && cause_filter.indexOf(cause) !== -1) {
                 cause_filter.splice(cause_filter.indexOf(cause), 1);
             }
-            evalProd(el, cause, cause_filter, status_ok);
-            if (cause_filter.length === 0) {
-                //is leeg
-            } else if (cause_filter.length === 1 && cause == zoekbalk) {
-                //zoekbedrag is aanwezig
-                trigger_zoekbedrag = true;
-            } else if (cause_filter.length === 1 && cause == zoekbedrag) {
-                //zoekbalk is aanwezig
-                trigger_zoekbalk = true;
-            }
+            evalProd(el, cause_filter, status_ok);
         }
 
         el.setAttribute(cause_attr, JSON.stringify(cause_filter));
-        
-        function evalProd(el, cause, cause_filter, status_ok) {
+
+        function evalProd(el, cause_filter, status_ok) {
             if (cause_filter.length === 0) {
                 el.style.display = null;
                 return;
@@ -107,5 +98,5 @@
             }
         }
     }
-
 }
+/* Product Zoeken */

@@ -28,7 +28,7 @@ main {
         height: 300px;
     }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 750px) {
     main {
         display: grid; /* Dit zorgt ervoor dat de grid duidelijk getoond wordt en de layout correct is. */
         gap: 10px 10px;

@@ -1,146 +1,145 @@
 <!--Van Elias De Hondt-->
 <!DOCTYPE html>
 <html lang="nl">
-
-<head>
-    <!--Meta + Title-->
-    <meta charset="UTF-8">
-    <title>Producten</title>
-    <!--Meta + Title-->
-    <!--Favicon-->
-    <link href="/elias.dehondt/media/images/favicon.ico" rel="icon">
-    <!--Favicon-->
-    <!--CSS-->
-    <link rel="stylesheet" href="/elias.dehondt/css/site.css">
-    <link rel="stylesheet" href="/elias.dehondt/css/producten.css">
-    <!--CSS-->
-</head>
-
-<body id="producten">
-    <h1 class="hide">Producten</h1>
-    <header>
-        <!--Top Navbar-->
-        <nav>
-            <h2 class="hide">menu</h2>
-            <ul>
-                <li><img class="nav-logo" alt="logo" src="/media/images/logo.png"></li>
-                <li><a href="/elias.dehondt/index.html">Home</a></li>
-                <li class="dropdown">
-                    <a class="active" href="#producten">Producten</a>
-                    <ul class="dropdown-content">
-                        <li><a href="/elias.dehondt/html/productdetail/padelrackets1.html">Padel Rackets 1</a></li>
-                        <li><a href="/elias.dehondt/html/productdetail/padelrackets2.html">Padel Rackets 2</a></li>
-                        <li><a href="/elias.dehondt/html/productdetail/padelrackets3.html">Padel Rackets 3</a></li>
-                    </ul>
-                </li>
-                <li><a href="/elias.dehondt/html/personalisering.html">Personalisering</a></li>
-                <li><a href="/elias.dehondt/html/faq.html">FAQ</a></li>
-                <li><a href="/elias.dehondt/html/contact.html">Contact</a></li>
-            </ul>
-        </nav>
-        <!--Top Navbar-->
-    </header>
-    <main>
-        <article>
-            <!--Filter-->
-            <h2 class="hide">Filter</h2>
-            <!--Alle-->
-            <input class="radio" type="radio" id="alle1" name="kleur" value="alle1" checked>
-            <input class="radio" type="radio" id="alle2" name="Maat" value="alle2" checked>
-            <input class="radio" type="radio" id="alle3" name="Geslacht" value="alle3" checked>
-            <input class="radio" type="radio" id="alle4" name="Merk" value="alle4" checked>
-            <!--Alle-->
-            <!--kleur-->
-            <input class="radio" type="radio" id="blauw" name="kleur" value="blauw">
-            <input class="radio" type="radio" id="zwart" name="kleur" value="zwart">
-            <input class="radio" type="radio" id="geel" name="kleur" value="geel">
-            <input class="radio" type="radio" id="groen" name="kleur" value="groen">
-            <!--kleur-->
-            <!--Maat-->
-            <input class="radio" type="radio" id="small" name="Maat" value="small">
-            <input class="radio" type="radio" id="medium" name="Maat" value="medium">
-            <input class="radio" type="radio" id="large" name="Maat" value="large">
-            <!--Maat-->
-            <!--Geslacht-->
-            <input class="radio" type="radio" id="man" name="Geslacht" value="man">
-            <input class="radio" type="radio" id="vrouw" name="Geslacht" value="vrouw">
-            <input class="radio" type="radio" id="unisex" name="Geslacht" value="unisex">
-            <!--Geslacht-->
-            <!--Merk-->
-            <input class="radio" type="radio" id="adidas" name="Merk" value="adidas">
-            <input class="radio" type="radio" id="asics" name="Merk" value="asics">
-            <input class="radio" type="radio" id="puma" name="Merk" value="puma">
-            <!--Merk-->
-            <!--Filter | Groepen-->
-            <ol class="filterG filterOL">
-                <li>
-                    <input type="text" class="zoekbalk" id="zoekbalk" placeholder="Zoeken...">
-                </li>
-                <li>
-                    <br>
-                    <label for="zoekbedrmin">Van</label><input type="number" id="zoekbedrmin" step="0.01">
-                    <label for="zoekbedrmax">Tot</label><input type="number" id="zoekbedrmax" step="0.01">
-                </li>
-                <li>
-                    <!--kleur-->
-                    <ol>
-                        <li><label class="filter" for="alle1">Alle</label></li>
-                        <li><label class="filter" for="blauw">Blauw</label></li>
-                        <li><label class="filter" for="zwart">Zwart</label></li>
-                        <li><label class="filter" for="geel">Geel</label></li>
-                        <li><label class="filter" for="groen">Groen</label></li>
-                    </ol>
-                    <!--kleur-->
-                </li>
-                <li>
-                    <!--Maat-->
-                    <ol>
-                        <li><label class="filter" for="alle2">Alle</label></li>
-                        <li><label class="filter" for="small">Small</label></li>
-                        <li><label class="filter" for="medium">Medium</label></li>
-                        <li><label class="filter" for="large">Large</label></li>
-                    </ol>
-                    <!--Maat-->
-                </li>
-                <li>
-                    <!--Geslacht-->
-                    <ol>
-                        <li><label class="filter" for="alle3">Alle</label></li>
-                        <li><label class="filter" for="man">Man</label></li>
-                        <li><label class="filter" for="vrouw">Vrouw</label></li>
-                        <li><label class="filter" for="unisex">Unisex</label></li>
-                    </ol>
-                    <!--Geslacht-->
-                </li>
-                <li>
-                    <!--Merk-->
-                    <ol>
-                        <li><label class="filter" for="alle4">Alle</label></li>
-                        <li><label class="filter" for="adidas">Adidas</label></li>
-                        <li><label class="filter" for="asics">Asics</label></li>
-                        <li><label class="filter" for="puma">Puma</label></li>
-                    </ol>
-                    <!--Merk-->
-                </li>
-            </ol>
-            <!--Filter | Groepen-->
-            <!--Producten pannel-->
-            <ol class="productenF productenG" id="productenP" />
-            <!--Producten-->
-        </article>
-    </main>
-    <!--JS-->
-    <script src="/elias.dehondt/script/dyn_data.js"></script>
-    <script src="/elias.dehondt/script/product_tonen.js" defer></script>
-    <script src="/elias.dehondt/script/product_zoeken.js" defer></script>
-    <!--JS-->
-    <footer>
-        <!--Bottom-->
-        <p>Design by <a href="https://www.eliasdh.com">Elias De Hondt.</a></p>
-        <p>Copyright 2018 - 2045 &copy; EliasDH.</p>
-        <p>All rights Reserved.</p>
-        <!--Bottom-->
-    </footer>
-</body>
-
+    <head>
+        <!--Meta + Title-->
+        <meta charset="UTF-8">
+        <title>Producten</title>
+        <!--Meta + Title-->
+        <!--Favicon-->
+        <link href="/elias.dehondt/media/images/favicon.ico" rel="icon">
+        <!--Favicon-->
+        <!--CSS-->
+        <link rel="stylesheet" href="/elias.dehondt/css/site.css">
+        <link rel="stylesheet" href="/elias.dehondt/css/producten.css">
+        <!--CSS-->
+    </head>
+    <body id="producten">
+        <h1 class="hide">Producten</h1>
+        <header>
+            <!--Top Navbar-->
+            <nav class="topnav" id="myTopnav">
+                <h2 class="hide">Menu</h2>
+                <ul>
+                    <li class="li-logo"><img class="nav-logo" alt="logo" src="/elias.dehondt/media/images/logo.png"></li>
+                    <li><a href="/elias.dehondt/index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a class="active" href="#producten">Producten</a>
+                        <ul class="dropdown-content">
+                            <li><a href="/elias.dehondt/html/productdetail/padelrackets1.html">Padel Rackets 1</a></li>
+                            <li><a href="/elias.dehondt/html/productdetail/padelrackets2.html">Padel Rackets 2</a></li>
+                            <li><a href="/elias.dehondt/html/productdetail/padelrackets3.html">Padel Rackets 3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/elias.dehondt/html/personalisering.html">Personalisering</a></li>
+                    <li><a href="/elias.dehondt/html/faq.html">FAQ</a></li>
+                    <li><a href="/elias.dehondt/html/contact.html">Contact</a></li>
+                </ul>
+                <a href="javascript:void(0);" class="icon" onclick="nav()">
+                    <i>=</i>
+                </a>
+            </nav>
+            <!--Top Navbar-->
+        </header>
+        <main>
+            <article>
+                <!--Filter-->
+                <h2 class="hide">Filter</h2>
+                <!--Alle-->
+                <input class="radio" type="radio" id="alle1" name="kleur" value="alle1" checked>
+                <input class="radio" type="radio" id="alle2" name="Maat" value="alle2" checked>
+                <input class="radio" type="radio" id="alle3" name="Geslacht" value="alle3" checked>
+                <input class="radio" type="radio" id="alle4" name="Merk" value="alle4" checked>
+                <!--Alle-->
+                <!--kleur-->
+                <input class="radio" type="radio" id="blauw" name="kleur" value="blauw">
+                <input class="radio" type="radio" id="zwart" name="kleur" value="zwart">
+                <input class="radio" type="radio" id="geel" name="kleur" value="geel">
+                <input class="radio" type="radio" id="groen" name="kleur" value="groen">
+                <!--kleur-->
+                <!--Maat-->
+                <input class="radio" type="radio" id="small" name="Maat" value="small">
+                <input class="radio" type="radio" id="medium" name="Maat" value="medium">
+                <input class="radio" type="radio" id="large" name="Maat" value="large">
+                <!--Maat-->
+                <!--Geslacht-->
+                <input class="radio" type="radio" id="man" name="Geslacht" value="man">
+                <input class="radio" type="radio" id="vrouw" name="Geslacht" value="vrouw">
+                <input class="radio" type="radio" id="unisex" name="Geslacht" value="unisex">
+                <!--Geslacht-->
+                <!--Merk-->
+                <input class="radio" type="radio" id="adidas" name="Merk" value="adidas">
+                <input class="radio" type="radio" id="asics" name="Merk" value="asics">
+                <input class="radio" type="radio" id="puma" name="Merk" value="puma">
+                <!--Merk-->
+                <!--Filter | Groepen-->
+                <ol class="filterG filterOL">
+                    <li>
+                        <input type="text" class="zoekbalk" id="zoekbalk" placeholder="Zoeken...">
+                        <label for="zoekbedrmin"></label><input placeholder="Min" type="number" id="zoekbedrmin" step="0.01">
+                        <label for="zoekbedrmax"></label><input placeholder="Max" type="number" id="zoekbedrmax" step="0.01">
+                    </li>
+                    <li>
+                        <!--kleur-->
+                        <ol>
+                            <li><label class="filter" for="alle1">Alle</label></li>
+                            <li><label class="filter" for="blauw">Blauw</label></li>
+                            <li><label class="filter" for="zwart">Zwart</label></li>
+                            <li><label class="filter" for="geel">Geel</label></li>
+                            <li><label class="filter" for="groen">Groen</label></li>
+                        </ol>
+                        <!--kleur-->
+                    </li>
+                    <li>
+                        <!--Maat-->
+                        <ol>
+                            <li><label class="filter" for="alle2">Alle</label></li>
+                            <li><label class="filter" for="small">Small</label></li>
+                            <li><label class="filter" for="medium">Medium</label></li>
+                            <li><label class="filter" for="large">Large</label></li>
+                        </ol>
+                        <!--Maat-->
+                    </li>
+                    <li>
+                        <!--Geslacht-->
+                        <ol>
+                            <li><label class="filter" for="alle3">Alle</label></li>
+                            <li><label class="filter" for="man">Man</label></li>
+                            <li><label class="filter" for="vrouw">Vrouw</label></li>
+                            <li><label class="filter" for="unisex">Unisex</label></li>
+                        </ol>
+                        <!--Geslacht-->
+                    </li>
+                    <li>
+                        <!--Merk-->
+                        <ol>
+                            <li><label class="filter" for="alle4">Alle</label></li>
+                            <li><label class="filter" for="adidas">Adidas</label></li>
+                            <li><label class="filter" for="asics">Asics</label></li>
+                            <li><label class="filter" for="puma">Puma</label></li>
+                        </ol>
+                        <!--Merk-->
+                    </li>
+                </ol>
+                <!--Filter | Groepen-->
+                <!--Producten Pannel-->
+                <ol class="productenF productenG" id="productenP"></ol>
+                <!--Producten Pannel-->
+                <!--Producten-->
+            </article>
+        </main>
+        <!--JS-->
+        <script src="/elias.dehondt/script/dyn_data.js"></script>
+        <script src="/elias.dehondt/script/product_tonen.js" defer></script>
+        <script src="/elias.dehondt/script/product_zoeken.js" defer></script>
+        <script src="/elias.dehondt/script/responsive_navigation.js"></script>
+        <!--JS-->
+        <footer>
+            <!--Bottom-->
+            <p>Design by <a href="https://www.eliasdh.com">Elias De Hondt.</a></p>
+            <p>Copyright 2018 - 2045 &copy; EliasDH.</p>
+            <p>All rights Reserved.</p>
+            <!--Bottom-->
+        </footer>
+    </body>
 </html>
